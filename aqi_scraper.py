@@ -9,7 +9,9 @@ from bs4 import BeautifulSoup
 import json
 import csv
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+
+JAKARTA_TZ = timezone(timedelta(hours=7))
 
 URL = "https://rendahemisi.jakarta.go.id/ispu"
 OUTPUT_JSON = "aqi_latest.json"
@@ -32,7 +34,10 @@ def scrape() -> list[dict]:
     resp.raise_for_status()
 
     soup = BeautifulSoup(resp.text, "html.parser")
-    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now_utc = datetime.now(timezone.utc)
+    now_jakarta = now_utc.astimezone(JAKARTA_TZ)
+    timestamp = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
+    timestamp_local = now_jakarta.strftime("%Y-%m-%d %H:%M:%S")
     records = []
 
     # Each station is an <li> inside the blog-grid <ul>
@@ -63,12 +68,13 @@ def scrape() -> list[dict]:
         status_tag = li.select_one("span.text-uppercase")
 
         record = {
-            "timestamp":  timestamp,
-            "station":    station_name,
-            "aqi":        value_tag.get_text(strip=True)    if value_tag    else None,
-            "pollutant":  pollutant_tag.get_text(strip=True) if pollutant_tag else None,
-            "status":     status_tag.get_text(strip=True)   if status_tag   else None,
-            "detail_url": detail_url,
+            "timestamp":       timestamp,
+            "timestamp_local": timestamp_local,
+            "station":         station_name,
+            "aqi":             value_tag.get_text(strip=True)     if value_tag     else None,
+            "pollutant":       pollutant_tag.get_text(strip=True) if pollutant_tag else None,
+            "status":          status_tag.get_text(strip=True)    if status_tag    else None,
+            "detail_url":      detail_url,
         }
         if record["station"]:  # skip blank/ghost items
             records.append(record)
@@ -83,7 +89,7 @@ def save_json(records: list[dict]) -> None:
 
 
 def append_csv(records: list[dict]) -> None:
-    fieldnames = ["timestamp", "station", "aqi", "pollutant", "status", "detail_url"]
+    fieldnames = ["timestamp", "timestamp_local", "station", "aqi", "pollutant", "status", "detail_url"]
     file_exists = os.path.isfile(OUTPUT_CSV)
     with open(OUTPUT_CSV, "a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
