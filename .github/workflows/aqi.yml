@@ -1,0 +1,35 @@
+name: Hourly AQI Scrape
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # top of every hour, UTC
+  workflow_dispatch:        # also allows manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run AQI scraper
+        run: python aqi_scraper.py
+
+      - name: Commit updated data files
+        run: |
+          git config user.email "aqi-bot@noreply.github.com"
+          git config user.name "AQI Bot"
+          git add aqi_latest.json aqi_log.csv
+          # Only commit if there are actual changes
+          git diff --staged --quiet || \
+            git commit -m "chore: AQI update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push
