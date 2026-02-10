@@ -2,7 +2,7 @@ name: Hourly AQI Scrape
 
 on:
   schedule:
-    - cron: "0 * * * *"   # top of every hour, UTC
+    - cron: "0 * * * *"   # top of every hour UTC
   workflow_dispatch:        # also allows manual trigger from GitHub UI
 
 jobs:
