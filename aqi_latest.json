@@ -1,7 +1,7 @@
 [
   {
-    "timestamp": "2026-02-19T01:02:51Z",
-    "timestamp_local": "2026-02-19 08:02:51",
+    "timestamp": "2026-02-19T04:07:37Z",
+    "timestamp_local": "2026-02-19 11:07:37",
     "station": "Us Embassy 1",
     "aqi": "69.0",
     "pollutant": "PM 2.5",
@@ -9,8 +9,8 @@
     "detail_url": "https://rendahemisi.jakarta.go.id/ispu-detail/1/us-embassy-1"
   },
   {
-    "timestamp": "2026-02-19T01:02:51Z",
-    "timestamp_local": "2026-02-19 08:02:51",
+    "timestamp": "2026-02-19T04:07:37Z",
+    "timestamp_local": "2026-02-19 11:07:37",
     "station": "Us Embassy 2",
     "aqi": "57.7",
     "pollutant": "PM 2.5",
@@ -18,8 +18,8 @@
     "detail_url": "https://rendahemisi.jakarta.go.id/ispu-detail/2/us-embassy-2"
   },
   {
-    "timestamp": "2026-02-19T01:02:51Z",
-    "timestamp_local": "2026-02-19 08:02:51",
+    "timestamp": "2026-02-19T04:07:37Z",
+    "timestamp_local": "2026-02-19 11:07:37",
     "station": "Jakarta Gbk",
     "aqi": "65.0",
     "pollutant": "PM 2.5",
@@ -27,8 +27,8 @@
     "detail_url": "https://rendahemisi.jakarta.go.id/ispu-detail/3/jakarta-gbk"
   },
   {
-    "timestamp": "2026-02-19T01:02:51Z",
-    "timestamp_local": "2026-02-19 08:02:51",
+    "timestamp": "2026-02-19T04:07:37Z",
+    "timestamp_local": "2026-02-19 11:07:37",
     "station": "Dki1 Bundaran Hi",
     "aqi": "53.0",
     "pollutant": "PM 2.5",
@@ -36,8 +36,8 @@
     "detail_url": "https://rendahemisi.jakarta.go.id/ispu-detail/4/dki1-bundaran-hi"
   },
   {
-    "timestamp": "2026-02-19T01:02:51Z",
-    "timestamp_local": "2026-02-19 08:02:51",
+    "timestamp": "2026-02-19T04:07:37Z",
+    "timestamp_local": "2026-02-19 11:07:37",
     "station": "Dki2 Kelapa Gading",
     "aqi": "51.0",
     "pollutant": "PM 2.5",
@@ -45,8 +45,8 @@
     "detail_url": "https://rendahemisi.jakarta.go.id/ispu-detail/5/dki2-kelapa-gading"
   },
   {
-    "timestamp": "2026-02-19T01:02:51Z",
-    "timestamp_local": "2026-02-19 08:02:51",
+    "timestamp": "2026-02-19T04:07:37Z",
+    "timestamp_local": "2026-02-19 11:07:37",
     "station": "Dki3 Jagakarsa",
     "aqi": "57.0",
     "pollutant": "SO2",
@@ -54,8 +54,8 @@
     "detail_url": "https://rendahemisi.jakarta.go.id/ispu-detail/6/dki3-jagakarsa"
   },
   {
-    "timestamp": "2026-02-19T01:02:51Z",
-    "timestamp_local": "2026-02-19 08:02:51",
+    "timestamp": "2026-02-19T04:07:37Z",
+    "timestamp_local": "2026-02-19 11:07:37",
     "station": "Dki4 Lubang Buaya",
     "aqi": "40.0",
     "pollutant": "PM 2.5",
@@ -63,8 +63,8 @@
     "detail_url": "https://rendahemisi.jakarta.go.id/ispu-detail/7/dki4-lubang-buaya"
   },
   {
-    "timestamp": "2026-02-19T01:02:51Z",
-    "timestamp_local": "2026-02-19 08:02:51",
+    "timestamp": "2026-02-19T04:07:37Z",
+    "timestamp_local": "2026-02-19 11:07:37",
     "station": "Dki5 Kebun Jeruk",
     "aqi": "66.0",
     "pollutant": "PM 2.5",
