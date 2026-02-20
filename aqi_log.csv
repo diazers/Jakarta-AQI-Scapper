@@ -1705,3 +1705,11 @@ timestamp,localtime,station,aqi,pollutant,status,detail_url
 2026-02-20T17:28:09Z,2026-02-21 00:28:09,Dki3 Jagakarsa,57.0,SO2,Sedang,https://rendahemisi.jakarta.go.id/ispu-detail/6/dki3-jagakarsa
 2026-02-20T17:28:09Z,2026-02-21 00:28:09,Dki4 Lubang Buaya,40.0,PM 2.5,Baik,https://rendahemisi.jakarta.go.id/ispu-detail/7/dki4-lubang-buaya
 2026-02-20T17:28:09Z,2026-02-21 00:28:09,Dki5 Kebun Jeruk,66.0,PM 2.5,Sedang,https://rendahemisi.jakarta.go.id/ispu-detail/8/dki5-kebun-jeruk
+2026-02-20T18:29:46Z,2026-02-21 01:29:46,Us Embassy 1,69.0,PM 2.5,Sedang,https://rendahemisi.jakarta.go.id/ispu-detail/1/us-embassy-1
+2026-02-20T18:29:46Z,2026-02-21 01:29:46,Us Embassy 2,57.7,PM 2.5,Sedang,https://rendahemisi.jakarta.go.id/ispu-detail/2/us-embassy-2
+2026-02-20T18:29:46Z,2026-02-21 01:29:46,Jakarta Gbk,65.0,PM 2.5,Sedang,https://rendahemisi.jakarta.go.id/ispu-detail/3/jakarta-gbk
+2026-02-20T18:29:46Z,2026-02-21 01:29:46,Dki1 Bundaran Hi,53.0,PM 2.5,Sedang,https://rendahemisi.jakarta.go.id/ispu-detail/4/dki1-bundaran-hi
+2026-02-20T18:29:46Z,2026-02-21 01:29:46,Dki2 Kelapa Gading,51.0,PM 2.5,Sedang,https://rendahemisi.jakarta.go.id/ispu-detail/5/dki2-kelapa-gading
+2026-02-20T18:29:46Z,2026-02-21 01:29:46,Dki3 Jagakarsa,57.0,SO2,Sedang,https://rendahemisi.jakarta.go.id/ispu-detail/6/dki3-jagakarsa
+2026-02-20T18:29:46Z,2026-02-21 01:29:46,Dki4 Lubang Buaya,40.0,PM 2.5,Baik,https://rendahemisi.jakarta.go.id/ispu-detail/7/dki4-lubang-buaya
+2026-02-20T18:29:46Z,2026-02-21 01:29:46,Dki5 Kebun Jeruk,66.0,PM 2.5,Sedang,https://rendahemisi.jakarta.go.id/ispu-detail/8/dki5-kebun-jeruk
