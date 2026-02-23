@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-02-23T10:37:52Z",
+    "timestamp_local": "2026-02-23 17:37:52",
+    "station": "Keterangan ISPU",
+    "ispu": "Tingkat kualitas udara sangat baik, tidak memberikan efek negatif terhadap manusia, hewan, tumbuhan.",
+    "parameter": "Tingkat kualitas udara masih dapat diterima pada kesehatan manusia, hewan dan tumbuhan.",
+    "tanggal": "Tingkat kualitas udara yang bersifat merugikan pada manusia, hewan dan tumbuhan."
+  },
+  {
+    "timestamp": "2026-02-23T10:37:52Z",
+    "timestamp_local": "2026-02-23 17:37:52",
+    "station": "Rekomendasi Aktifitas",
+    "ispu": "Sangat baik melakukan kegiatan di luar",
+    "parameter": "Setiap orang:Masih dapat beraktivitas di luar.Kelompok sensitif:Kurangi aktivitas fisik yang terlalu lama atau berat.",
+    "tanggal": "Setiap orang:Mengurangi aktivitas fisik yang terlalu lama di luar ruangan.Kelompok sensitif:Boleh melakukan aktivitas di luar, tetapi mengambil rehat lebih sering dan melakukan aktivitas ringan serta membawa obat pribadi selama aktifitas."
+  }
+]
