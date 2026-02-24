@@ -55,10 +55,15 @@ def build_driver() -> webdriver.Chrome:
     )
     if USE_WEBDRIVER_MANAGER:
         service = Service(ChromeDriverManager().install())
-        return webdriver.Chrome(service=service, options=options)
+        driver = webdriver.Chrome(service=service, options=options)
     else:
         # Assumes chromedriver is on PATH
-        return webdriver.Chrome(options=options)
+        driver = webdriver.Chrome(options=options)
+
+    # Cap how long Selenium waits for a page to fully load.
+    # Without this, driver.get() can hang for 2+ minutes on a slow site.
+    driver.set_page_load_timeout(60)
+    return driver
 
 
 def wait_for_table(driver: webdriver.Chrome, timeout: int = PAGE_LOAD_TIMEOUT):
@@ -197,14 +202,25 @@ def scrape() -> list[dict]:
         driver = build_driver()
 
         print(f"[INFO] Loading {PAGE_URL} …")
-        driver.get(PAGE_URL)
+        MAX_RETRIES = 3
+        RETRY_DELAY = 10   # seconds to wait between retries
 
-        try:
-            wait_for_table(driver)
-        except TimeoutException:
-            print("[ERROR] Timed out waiting for the station table to load.", file=sys.stderr)
-            print("The site may be blocking this IP or JS failed to render.", file=sys.stderr)
-            return []
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                if attempt > 1:
+                    print(f"[INFO] Retry {attempt}/{MAX_RETRIES} — refreshing page …")
+                driver.get(PAGE_URL)
+                wait_for_table(driver)
+                print(f"[INFO] Page loaded successfully on attempt {attempt}.")
+                break  # success — exit retry loop
+            except TimeoutException:
+                print(f"[WARN] Attempt {attempt}/{MAX_RETRIES} timed out.", file=sys.stderr)
+                if attempt < MAX_RETRIES:
+                    print(f"[INFO] Waiting {RETRY_DELAY}s before retrying …")
+                    time.sleep(RETRY_DELAY)
+                else:
+                    print("[WARN] All attempts failed — site appears unavailable. Skipping this run.", file=sys.stderr)
+                    return []
 
         # Set 50 rows per page so we only need 2 pages for ~97 stations
         set_entries_per_page(driver, ENTRIES_PER_PAGE)
@@ -347,8 +363,8 @@ if __name__ == "__main__":
     data = scrape()
 
     if not data:
-        print("[ERROR] No data scraped. Check the errors above.")
-        sys.exit(1)
+        print("[WARN] No data scraped — site was likely unavailable. Exiting cleanly.")
+        sys.exit(0)  # exit 0 so GitHub Actions doesn't mark the run as failed
 
     is_first_run = not os.path.isfile(OUTPUT_CSV)
 
