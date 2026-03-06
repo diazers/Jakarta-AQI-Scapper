@@ -400,7 +400,7 @@ def parse(text):
 def main():
     print("\n" + "═" * 60)
     print(f"  {REGION}  —  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
-    print(f"{"═"*60}\n")
+    print("\n" + "═" * 60)
 
     driver  = setup_driver()
     results = []
