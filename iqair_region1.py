@@ -444,9 +444,9 @@ def parse(text):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
-    print(f"\n{"═"*60}")
+    # print(f"\n{"═"*60}")
     print(f"  {REGION}  —  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
-    print(f"{"═"*60}\n")
+    # print(f"{"═"*60}\n")
 
     driver  = setup_driver()
     results = []
