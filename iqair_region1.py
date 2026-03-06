@@ -398,7 +398,7 @@ def parse(text):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
-    print(f"\n{"═"*60}")
+    print("\n" + "═" * 60)
     print(f"  {REGION}  —  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print(f"{"═"*60}\n")
 
