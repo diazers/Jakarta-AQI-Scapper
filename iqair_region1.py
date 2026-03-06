@@ -76,15 +76,47 @@ def setup_driver():
 def load_map(driver, url):
     print("Loading map...")
     driver.get(url)
+
+    # Step 1: wait for map canvas
     try:
         WebDriverWait(driver, 30).until(
             EC.presence_of_element_located(
                 (By.CSS_SELECTOR, "canvas, .mapboxgl-canvas, .leaflet-container")
             )
         )
+        print("  Map canvas detected.")
     except TimeoutException:
-        pass
-    time.sleep(12)  # headless rendering needs more time
+        print("  WARNING: map canvas not found after 30s.")
+
+    # Step 2: wait for actual AQI dot elements to appear in DOM
+    print("  Waiting for AQI markers to render...")
+    deadline = time.time() + 40
+    dots_found = 0
+    while time.time() < deadline:
+        dots_found = driver.execute_script("""
+            var count = 0;
+            var all = document.querySelectorAll('div, span');
+            for (var i = 0; i < all.length; i++) {
+                var txt = (all[i].innerText || '').trim();
+                if (!/^\d{1,3}$/.test(txt)) continue;
+                var n = parseInt(txt);
+                if (n < 1 || n > 500) continue;
+                var r = all[i].getBoundingClientRect();
+                if (r.width > 10 && r.width < 80 && r.height > 10 && r.height < 80) count++;
+            }
+            return count;
+        """)
+        if dots_found > 0:
+            print(f"  Markers detected ({dots_found} candidates). Waiting 3s for full render...")
+            time.sleep(3)
+            break
+        time.sleep(1)
+
+    if dots_found == 0:
+        print("  WARNING: no markers appeared after 40s — page may have blocked rendering.")
+        print(f"  Page title: {driver.title}")
+        print(f"  URL: {driver.current_url}")
+
     print("Map loaded.\n")
 
 
