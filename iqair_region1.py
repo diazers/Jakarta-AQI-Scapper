@@ -51,12 +51,26 @@ def setup_driver():
     opt.add_argument("--window-size=1920,1080")
     opt.add_argument("--disable-notifications")
     opt.add_argument("--lang=id")
-    # Required for GitHub Actions (no display available)
-    opt.add_argument("--headless=new")
+    # Required for GitHub Actions CI environment
     opt.add_argument("--no-sandbox")
     opt.add_argument("--disable-dev-shm-usage")
     opt.add_argument("--disable-gpu")
-    return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=opt)
+    # Run headless but disguise as a real browser to avoid bot detection
+    opt.add_argument("--headless=new")
+    opt.add_argument("--disable-blink-features=AutomationControlled")
+    opt.add_experimental_option("excludeSwitches", ["enable-automation"])
+    opt.add_experimental_option("useAutomationExtension", False)
+    opt.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36")
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=opt)
+    # Remove webdriver property that sites use to detect automation
+    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
+        "source": """
+            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+            Object.defineProperty(navigator, 'plugins', { get: () => [1,2,3] });
+            Object.defineProperty(navigator, 'languages', { get: () => ['id-ID','id','en-US','en'] });
+        """
+    })
+    return driver
 
 
 def load_map(driver, url):
@@ -70,7 +84,7 @@ def load_map(driver, url):
         )
     except TimeoutException:
         pass
-    time.sleep(6)
+    time.sleep(12)  # headless rendering needs more time
     print("Map loaded.\n")
 
 
@@ -398,9 +412,9 @@ def parse(text):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
-    # print("\n" + "═" * 60)
+    print(f"\n{"═"*60}")
     print(f"  {REGION}  —  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
-    # print("\n" + "═" * 60)
+    print(f"{"═"*60}\n")
 
     driver  = setup_driver()
     results = []
@@ -417,6 +431,17 @@ def main():
 
         if not dots:
             print("⚠  No dots found.")
+            # Save screenshot and page title for debugging
+            try:
+                driver.save_screenshot("debug_screenshot.png")
+                print(f"  Page title: {driver.title}")
+                print(f"  Current URL: {driver.current_url}")
+                print(f"  Page source length: {len(driver.page_source)}")
+                # Check if map canvas is present
+                canvases = driver.find_elements(By.CSS_SELECTOR, "canvas, .leaflet-container, .mapboxgl-canvas")
+                print(f"  Map canvas elements found: {len(canvases)}")
+            except Exception as dbg_err:
+                print(f"  Debug info error: {dbg_err}")
             return
 
         prev_station = ""
