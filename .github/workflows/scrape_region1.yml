@@ -1,8 +1,8 @@
 name: Scrape Region 1
 
 on:
-  schedule:
-    - cron: '5 * * * *'   # every hour at :05  → 01:05, 02:05, 03:05 ...
+  # schedule:
+  #   - cron: '5 * * * *'   # every hour at :05  → 01:05, 02:05, 03:05 ...
   workflow_dispatch:        # manual trigger from GitHub UI
 
 jobs:
