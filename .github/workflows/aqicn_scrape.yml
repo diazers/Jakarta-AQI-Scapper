@@ -1,9 +1,12 @@
 name: Hourly AQICN Scrape
 
 on:
-  schedule:
-    - cron: '0 * * * *'   # every hour at :00
-  workflow_dispatch:       # manual trigger from GitHub UI
+  # schedule:
+  #   - cron: '0 * * * *'   # every hour at :00
+  # workflow_dispatch:       # manual trigger from GitHub UI
+    workflow_dispatch:        # allows manual trigger from GitHub UI
+    repository_dispatch:      # triggered by cron-job.org
+      types: [hourly-aqiCN-scrape]
 
 jobs:
   scrape:
