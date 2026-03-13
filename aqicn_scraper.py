@@ -3,8 +3,30 @@ import re
 import csv
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from playwright.async_api import async_playwright
+
+WIB = timezone(timedelta(hours=7))
+UTC = timezone.utc
+
+
+def to_wib(timestamp_str):
+    """Convert tooltip timestamp from UTC to WIB (UTC+7).
+    Site serves timestamps in UTC regardless of client location.
+    Input:  'Mar 13, 2026 8:00 AM'
+    Output: 'Mar 13, 2026 3:00 PM'
+    """
+    if not timestamp_str:
+        return timestamp_str
+    try:
+        dt_utc = datetime.strptime(timestamp_str.strip(), "%b %d, %Y %I:%M %p")
+        dt_utc = dt_utc.replace(tzinfo=UTC)
+        dt_wib = dt_utc.astimezone(WIB)
+        # %-I = no-padding hour on Linux; use %#I on Windows
+        fmt = "%b %d, %Y %#I:%M %p" if sys.platform == "win32" else "%b %d, %Y %-I:%M %p"
+        return dt_wib.strftime(fmt)
+    except Exception:
+        return timestamp_str  # return original if parsing fails
 
 STATIONS = [
     {"name": "Jakarta GBK Gelora",        "url": "https://aqicn.org/station/@416842/"},
@@ -67,7 +89,7 @@ def parse_tooltip(label, tooltip):
     timestamp = ""
     for part in clean[1:]:
         if re.search(r'\d{4}', part):
-            timestamp = part
+            timestamp = to_wib(part)  # convert UTC → WIB (UTC+7)
             break
     return value, timestamp
 
@@ -124,9 +146,19 @@ async def scrape_station(page, url, name):
 
     try:
         await page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        await page.wait_for_selector("td.station-specie-graph", timeout=15000)
+
+        # Some stations load data via JS slowly (e.g. Kemayoran)
+        # Try once, reload and retry if selector not found
+        try:
+            await page.wait_for_selector("td.station-specie-graph", timeout=20000)
+        except Exception:
+            print(f"  Slow load — reloading and retrying...")
+            await page.reload(wait_until="domcontentloaded", timeout=30000)
+            await page.wait_for_selector("td.station-specie-graph", timeout=20000)
+
         await page.evaluate("window.scrollTo(0, 200)")
-        await page.wait_for_timeout(3000)
+        await page.wait_for_timeout(5000)  # 5s for GitHub Actions (slower than local)
+
     except Exception as e:
         print(f"  ERROR: {e}")
         return {}
