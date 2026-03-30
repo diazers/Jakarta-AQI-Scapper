@@ -1,50 +1,58 @@
 [
   {
-    "timestamp": "2026-03-30T03:45:31Z",
-    "timestamp_local": "2026-03-30 10:45:31",
+    "timestamp": "2026-03-30T04:15:28Z",
+    "timestamp_local": "2026-03-30 11:15:28",
     "station": "DKI40 RPTRA Tipar Asri",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:30:00"
+    "tanggal": "03/30/2026 11:00:00"
   },
   {
-    "timestamp": "2026-03-30T03:45:31Z",
-    "timestamp_local": "2026-03-30 10:45:31",
+    "timestamp": "2026-03-30T04:15:28Z",
+    "timestamp_local": "2026-03-30 11:15:28",
     "station": "DKI56 SDN 04 Bintaro",
     "ispu": "56",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:30:00"
+    "tanggal": "03/30/2026 11:00:00"
   },
   {
-    "timestamp": "2026-03-30T03:45:31Z",
-    "timestamp_local": "2026-03-30 10:45:31",
+    "timestamp": "2026-03-30T04:15:28Z",
+    "timestamp_local": "2026-03-30 11:15:28",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "48",
+    "ispu": "47",
     "parameter": "PM10",
-    "tanggal": "03/30/2026 10:30:00"
+    "tanggal": "03/30/2026 11:00:00"
   },
   {
-    "timestamp": "2026-03-30T03:45:31Z",
-    "timestamp_local": "2026-03-30 10:45:31",
+    "timestamp": "2026-03-30T04:15:28Z",
+    "timestamp_local": "2026-03-30 11:15:28",
     "station": "DKI89 RSUD Cengkareng",
     "ispu": "22",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:30:00"
+    "tanggal": "03/30/2026 11:00:00"
   },
   {
-    "timestamp": "2026-03-30T03:45:31Z",
-    "timestamp_local": "2026-03-30 10:45:31",
+    "timestamp": "2026-03-30T04:15:28Z",
+    "timestamp_local": "2026-03-30 11:15:28",
     "station": "DKI31 Jakarta Islamic Center (JIC)",
     "ispu": "32",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:30:00"
+    "tanggal": "03/30/2026 11:00:00"
   },
   {
-    "timestamp": "2026-03-30T03:45:31Z",
-    "timestamp_local": "2026-03-30 10:45:31",
+    "timestamp": "2026-03-30T04:15:28Z",
+    "timestamp_local": "2026-03-30 11:15:28",
+    "station": "DKI80 SDN 18 Pekayon",
+    "ispu": "0",
+    "parameter": "PM25",
+    "tanggal": "03/30/2026 11:00:00"
+  },
+  {
+    "timestamp": "2026-03-30T04:15:28Z",
+    "timestamp_local": "2026-03-30 11:15:28",
     "station": "DKI59 TPS 3R Siaga Pejaten Barat",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:30:00"
+    "tanggal": "03/30/2026 11:00:00"
   }
 ]
