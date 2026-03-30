@@ -1,50 +1,50 @@
 [
   {
-    "timestamp": "2026-03-30T03:15:33Z",
-    "timestamp_local": "2026-03-30 10:15:33",
+    "timestamp": "2026-03-30T03:45:31Z",
+    "timestamp_local": "2026-03-30 10:45:31",
     "station": "DKI40 RPTRA Tipar Asri",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:00:00"
+    "tanggal": "03/30/2026 10:30:00"
   },
   {
-    "timestamp": "2026-03-30T03:15:33Z",
-    "timestamp_local": "2026-03-30 10:15:33",
+    "timestamp": "2026-03-30T03:45:31Z",
+    "timestamp_local": "2026-03-30 10:45:31",
     "station": "DKI56 SDN 04 Bintaro",
     "ispu": "56",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:00:00"
+    "tanggal": "03/30/2026 10:30:00"
   },
   {
-    "timestamp": "2026-03-30T03:15:33Z",
-    "timestamp_local": "2026-03-30 10:15:33",
+    "timestamp": "2026-03-30T03:45:31Z",
+    "timestamp_local": "2026-03-30 10:45:31",
     "station": "DKI19 Pondok Rangon",
     "ispu": "48",
     "parameter": "PM10",
-    "tanggal": "03/30/2026 10:00:00"
+    "tanggal": "03/30/2026 10:30:00"
   },
   {
-    "timestamp": "2026-03-30T03:15:33Z",
-    "timestamp_local": "2026-03-30 10:15:33",
+    "timestamp": "2026-03-30T03:45:31Z",
+    "timestamp_local": "2026-03-30 10:45:31",
     "station": "DKI89 RSUD Cengkareng",
     "ispu": "22",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:00:00"
+    "tanggal": "03/30/2026 10:30:00"
   },
   {
-    "timestamp": "2026-03-30T03:15:33Z",
-    "timestamp_local": "2026-03-30 10:15:33",
+    "timestamp": "2026-03-30T03:45:31Z",
+    "timestamp_local": "2026-03-30 10:45:31",
     "station": "DKI31 Jakarta Islamic Center (JIC)",
     "ispu": "32",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:00:00"
+    "tanggal": "03/30/2026 10:30:00"
   },
   {
-    "timestamp": "2026-03-30T03:15:33Z",
-    "timestamp_local": "2026-03-30 10:15:33",
+    "timestamp": "2026-03-30T03:45:31Z",
+    "timestamp_local": "2026-03-30 10:45:31",
     "station": "DKI59 TPS 3R Siaga Pejaten Barat",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "03/30/2026 10:00:00"
+    "tanggal": "03/30/2026 10:30:00"
   }
 ]
