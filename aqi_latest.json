@@ -1,546 +1,506 @@
 [
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI76 SDN 10 Pondok Bambu",
     "ispu": "53",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI40 RPTRA Tipar Asri",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI56 SDN 04 Bintaro",
     "ispu": "41",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "75",
+    "ispu": "76",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI37 RPTRA Rawa Badak Utara",
     "ispu": "16",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI89 RSUD Cengkareng",
     "ispu": "19",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI31 Jakarta Islamic Center (JIC)",
     "ispu": "32",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI80 SDN 18 Pekayon",
     "ispu": "29",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI44 SDN 12 Sunter Agung",
     "ispu": "19",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI51 RPTRA Manunggal Petukangan Selatan",
     "ispu": "51",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI58 SDN 20 Pejaten Timur",
     "ispu": "35",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI32 Kantor Kelurahan Kapuk Muara",
     "ispu": "56",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI63 Kantor SUDIN LH Jakarta Timur (ROOFTOP)",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI16 Ancol",
     "ispu": "54",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI71 SDN 02 Pagi Ujung Menteng",
     "ispu": "19",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI65 Puskesmas Kecamatan Duren Sawit",
     "ispu": "51",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
+    "station": "DKI17 SDN 07 Kramat Pela",
+    "ispu": "61",
+    "parameter": "PM25",
+    "tanggal": "04/06/2026 08:00:00"
+  },
+  {
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI20 Rusunawa Pesakih",
     "ispu": "47",
     "parameter": "SO2",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
-    "station": "DKI18 Lebak Bulus",
-    "ispu": "64",
-    "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
-  },
-  {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "110",
     "parameter": "SO2",
     "tanggal": "04/02/2026 10:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
-    "station": "DKI05 Kebun Jeruk",
-    "ispu": "67",
-    "parameter": "PM25",
-    "tanggal": "04/06/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
-    "station": "DKI03 Jagakarsa",
-    "ispu": "54",
-    "parameter": "PM25",
-    "tanggal": "04/06/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
-    "station": "DKI02 Kelapa Gading",
-    "ispu": "57",
-    "parameter": "PM25",
-    "tanggal": "04/06/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI95 Tebet Eco Park",
     "ispu": "59",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI96 Taman Sungai Kendal",
     "ispu": "55",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI77 SDN 11 Utan Kayu Utara",
     "ispu": "25",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI11 Jakarta Equestrian Pulomas",
-    "ispu": "75",
+    "ispu": "74",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI50 RPTRA Duren Tiga",
     "ispu": "41",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI82 Taman Sutoyo",
     "ispu": "58",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI69 RSUD Cipayung",
     "ispu": "35",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI88 RPTRA Ria Damkar Joglo 2",
-    "ispu": "113",
+    "ispu": "111",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI53 SDN 01 Manggarai",
     "ispu": "9",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI42 SDN 01 Sukapura",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI85 Komplek Dinas Kebersihan Tegal Alur",
     "ispu": "19",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI64 Padepokan Restu Bumi Asrama Ciracas",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI68 RPTRA Udara Segar",
     "ispu": "25",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI87 RPTRA Pandawa",
     "ispu": "19",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI72 SDN 03 Cijantung",
     "ispu": "16",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI54 SDN 02 Petukangan Selatan",
     "ispu": "41",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI26 RPTRA Melati Duri Pulo",
     "ispu": "12",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI81 SMPN 179 Jakarta",
     "ispu": "25",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI86 RPTRA Kalijodo",
     "ispu": "3",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI25 RPTRA Kebon Melati",
-    "ispu": "45",
+    "ispu": "48",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI49 RPTRA Anggrek Bintaro",
     "ispu": "25",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI23 RPTRA Harapan Mulia",
     "ispu": "16",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI94 Taman Maju Bersama (TMB) Tanjung Duren",
     "ispu": "29",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI79 SDN 18 Cipinang Muara",
     "ispu": "54",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI52 RPTRA Mawar",
     "ispu": "19",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI21 RPTRA Amir Hamzah",
     "ispu": "29",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI35 RPTRA Penjaringan Indah",
     "ispu": "55",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI47 Kantor LLHD Jakarta Selatan (ROOFTOP)",
     "ispu": "53",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI36 RPTRA Pulobesar",
     "ispu": "41",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI27 SDN 01 Cempaka Putih Barat",
     "ispu": "19",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
-    "station": "DKI04 Lubang Buaya",
-    "ispu": "82",
-    "parameter": "PM25",
-    "tanggal": "04/06/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI83 Kamal Park",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
-    "station": "DKI01 Bundaran HI",
-    "ispu": "65",
-    "parameter": "PM25",
-    "tanggal": "04/06/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI22 RPTRA Cideng Kenangan",
     "ispu": "41",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI67 RPTRA Rawajaya",
     "ispu": "61",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI38 RPTRA Rorotan Indah 2",
     "ispu": "16",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI60 Waduk Jagakarsa",
     "ispu": "41",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI43 SDN 07 Peganggsaan Dua",
     "ispu": "29",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI34 RPTRA Gading Tarian",
     "ispu": "19",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI30 Taman Ismail Marzuki",
     "ispu": "35",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI28 SDN 07 Paseban (ROOFTOP)",
     "ispu": "35",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI08 PPOP Ragunan",
-    "ispu": "41",
+    "ispu": "40",
     "parameter": "HC",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI74 SDN 04 Cipinang Melayu",
     "ispu": "32",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI70 SDN 01 Pondok Kelapa Pagi",
     "ispu": "6",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   },
   {
-    "timestamp": "2026-04-06T01:45:41Z",
-    "timestamp_local": "2026-04-06 08:45:41",
+    "timestamp": "2026-04-06T02:15:43Z",
+    "timestamp_local": "2026-04-06 09:15:43",
     "station": "DKI61 Kantor Kecamatan Jatinegara (ROOFTOP)",
     "ispu": "38",
     "parameter": "PM25",
-    "tanggal": "04/06/2026 08:30:00"
+    "tanggal": "04/06/2026 09:00:00"
   }
 ]
