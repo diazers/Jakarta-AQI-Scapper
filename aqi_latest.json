@@ -1,106 +1,74 @@
 [
   {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
+    "timestamp": "2026-04-08T23:15:41Z",
+    "timestamp_local": "2026-04-09 06:15:41",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "91",
+    "ispu": "93",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 05:30:00"
+    "tanggal": "04/09/2026 06:00:00"
   },
   {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
+    "timestamp": "2026-04-08T23:15:41Z",
+    "timestamp_local": "2026-04-09 06:15:41",
     "station": "DKI16 Ancol",
-    "ispu": "38",
+    "ispu": "41",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 05:30:00"
+    "tanggal": "04/09/2026 06:00:00"
   },
   {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
+    "timestamp": "2026-04-08T23:15:41Z",
+    "timestamp_local": "2026-04-09 06:15:41",
+    "station": "DKI17 SDN 07 Kramat Pela",
+    "ispu": "59",
+    "parameter": "PM25",
+    "tanggal": "04/09/2026 06:00:00"
+  },
+  {
+    "timestamp": "2026-04-08T23:15:41Z",
+    "timestamp_local": "2026-04-09 06:15:41",
     "station": "DKI20 Rusunawa Pesakih",
     "ispu": "58",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 05:30:00"
+    "tanggal": "04/09/2026 06:00:00"
   },
   {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
+    "timestamp": "2026-04-08T23:15:41Z",
+    "timestamp_local": "2026-04-09 06:15:41",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
+    "timestamp": "2026-04-08T23:15:41Z",
+    "timestamp_local": "2026-04-09 06:15:41",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "110",
     "parameter": "SO2",
     "tanggal": "04/02/2026 10:00:00"
   },
   {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
-    "station": "DKI05 Kebun Jeruk",
-    "ispu": "58",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 05:00:00"
-  },
-  {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
-    "station": "DKI03 Jagakarsa",
-    "ispu": "62",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 05:00:00"
-  },
-  {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
-    "station": "DKI02 Kelapa Gading",
-    "ispu": "46",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 05:00:00"
-  },
-  {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
+    "timestamp": "2026-04-08T23:15:41Z",
+    "timestamp_local": "2026-04-09 06:15:41",
     "station": "DKI95 Tebet Eco Park",
     "ispu": "51",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 05:30:00"
+    "tanggal": "04/09/2026 06:00:00"
   },
   {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
+    "timestamp": "2026-04-08T23:15:41Z",
+    "timestamp_local": "2026-04-09 06:15:41",
     "station": "DKI96 Taman Sungai Kendal",
-    "ispu": "38",
-    "parameter": "PM10",
-    "tanggal": "04/09/2026 05:30:00"
+    "ispu": "41",
+    "parameter": "PM25",
+    "tanggal": "04/09/2026 06:00:00"
   },
   {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
+    "timestamp": "2026-04-08T23:15:41Z",
+    "timestamp_local": "2026-04-09 06:15:41",
     "station": "DKI11 Jakarta Equestrian Pulomas",
-    "ispu": "51",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 05:30:00"
-  },
-  {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
-    "station": "DKI04 Lubang Buaya",
-    "ispu": "83",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 05:00:00"
-  },
-  {
-    "timestamp": "2026-04-08T22:45:43Z",
-    "timestamp_local": "2026-04-09 05:45:43",
-    "station": "DKI01 Bundaran HI",
     "ispu": "54",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 05:00:00"
+    "tanggal": "04/09/2026 06:00:00"
   }
 ]
