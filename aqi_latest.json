@@ -1,106 +1,74 @@
 [
   {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
+    "timestamp": "2026-04-09T05:15:48Z",
+    "timestamp_local": "2026-04-09 12:15:48",
     "station": "DKI19 Pondok Rangon",
     "ispu": "85",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 11:30:00"
+    "tanggal": "04/09/2026 12:00:00"
   },
   {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
+    "timestamp": "2026-04-09T05:15:48Z",
+    "timestamp_local": "2026-04-09 12:15:48",
     "station": "DKI16 Ancol",
     "ispu": "38",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 11:30:00"
+    "tanggal": "04/09/2026 12:00:00"
   },
   {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
+    "timestamp": "2026-04-09T05:15:48Z",
+    "timestamp_local": "2026-04-09 12:15:48",
+    "station": "DKI17 SDN 07 Kramat Pela",
+    "ispu": "61",
+    "parameter": "PM25",
+    "tanggal": "04/09/2026 12:00:00"
+  },
+  {
+    "timestamp": "2026-04-09T05:15:48Z",
+    "timestamp_local": "2026-04-09 12:15:48",
     "station": "DKI20 Rusunawa Pesakih",
     "ispu": "59",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 11:30:00"
+    "tanggal": "04/09/2026 12:00:00"
   },
   {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
+    "timestamp": "2026-04-09T05:15:48Z",
+    "timestamp_local": "2026-04-09 12:15:48",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
+    "timestamp": "2026-04-09T05:15:48Z",
+    "timestamp_local": "2026-04-09 12:15:48",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "110",
     "parameter": "SO2",
     "tanggal": "04/02/2026 10:00:00"
   },
   {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
-    "station": "DKI05 Kebun Jeruk",
-    "ispu": "62",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 11:00:00"
-  },
-  {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
-    "station": "DKI03 Jagakarsa",
-    "ispu": "62",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 11:00:00"
-  },
-  {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
-    "station": "DKI02 Kelapa Gading",
-    "ispu": "56",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 11:00:00"
-  },
-  {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
+    "timestamp": "2026-04-09T05:15:48Z",
+    "timestamp_local": "2026-04-09 12:15:48",
     "station": "DKI95 Tebet Eco Park",
     "ispu": "54",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 11:30:00"
+    "tanggal": "04/09/2026 12:00:00"
   },
   {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
+    "timestamp": "2026-04-09T05:15:48Z",
+    "timestamp_local": "2026-04-09 12:15:48",
     "station": "DKI96 Taman Sungai Kendal",
     "ispu": "53",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 11:30:00"
+    "tanggal": "04/09/2026 12:00:00"
   },
   {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
+    "timestamp": "2026-04-09T05:15:48Z",
+    "timestamp_local": "2026-04-09 12:15:48",
     "station": "DKI11 Jakarta Equestrian Pulomas",
     "ispu": "59",
     "parameter": "PM25",
-    "tanggal": "04/09/2026 11:30:00"
-  },
-  {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
-    "station": "DKI04 Lubang Buaya",
-    "ispu": "87",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 11:00:00"
-  },
-  {
-    "timestamp": "2026-04-09T04:45:47Z",
-    "timestamp_local": "2026-04-09 11:45:47",
-    "station": "DKI01 Bundaran HI",
-    "ispu": "55",
-    "parameter": "PM25",
-    "tanggal": "04/09/2026 11:00:00"
+    "tanggal": "04/09/2026 12:00:00"
   }
 ]
