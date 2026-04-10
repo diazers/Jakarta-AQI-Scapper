@@ -1,74 +1,106 @@
 [
   {
-    "timestamp": "2026-04-10T03:15:42Z",
-    "timestamp_local": "2026-04-10 10:15:42",
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
     "station": "DKI19 Pondok Rangon",
     "ispu": "58",
     "parameter": "PM25",
-    "tanggal": "04/10/2026 10:00:00"
+    "tanggal": "04/10/2026 10:30:00"
   },
   {
-    "timestamp": "2026-04-10T03:15:42Z",
-    "timestamp_local": "2026-04-10 10:15:42",
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
     "station": "DKI16 Ancol",
     "ispu": "22",
     "parameter": "PM25",
-    "tanggal": "04/10/2026 10:00:00"
+    "tanggal": "04/10/2026 10:30:00"
   },
   {
-    "timestamp": "2026-04-10T03:15:42Z",
-    "timestamp_local": "2026-04-10 10:15:42",
-    "station": "DKI17 SDN 07 Kramat Pela",
-    "ispu": "3450",
-    "parameter": "PM25",
-    "tanggal": "04/10/2026 09:00:00"
-  },
-  {
-    "timestamp": "2026-04-10T03:15:42Z",
-    "timestamp_local": "2026-04-10 10:15:42",
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
     "station": "DKI20 Rusunawa Pesakih",
     "ispu": "49",
     "parameter": "SO2",
-    "tanggal": "04/10/2026 10:00:00"
+    "tanggal": "04/10/2026 10:30:00"
   },
   {
-    "timestamp": "2026-04-10T03:15:42Z",
-    "timestamp_local": "2026-04-10 10:15:42",
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
     "station": "DKI18 Lebak Bulus",
-    "ispu": "53",
+    "ispu": "51",
     "parameter": "PM25",
-    "tanggal": "04/10/2026 10:00:00"
+    "tanggal": "04/10/2026 10:30:00"
   },
   {
-    "timestamp": "2026-04-10T03:15:42Z",
-    "timestamp_local": "2026-04-10 10:15:42",
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-10T03:15:42Z",
-    "timestamp_local": "2026-04-10 10:15:42",
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "110",
     "parameter": "SO2",
     "tanggal": "04/02/2026 10:00:00"
   },
   {
-    "timestamp": "2026-04-10T03:15:42Z",
-    "timestamp_local": "2026-04-10 10:15:42",
-    "station": "DKI96 Taman Sungai Kendal",
-    "ispu": "26",
-    "parameter": "PM10",
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
+    "station": "DKI05 Kebun Jeruk",
+    "ispu": "52",
+    "parameter": "PM25",
     "tanggal": "04/10/2026 10:00:00"
   },
   {
-    "timestamp": "2026-04-10T03:15:42Z",
-    "timestamp_local": "2026-04-10 10:15:42",
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
+    "station": "DKI03 Jagakarsa",
+    "ispu": "55",
+    "parameter": "PM25",
+    "tanggal": "04/10/2026 10:00:00"
+  },
+  {
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
+    "station": "DKI02 Kelapa Gading",
+    "ispu": "27",
+    "parameter": "PM25",
+    "tanggal": "04/10/2026 10:00:00"
+  },
+  {
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
+    "station": "DKI96 Taman Sungai Kendal",
+    "ispu": "26",
+    "parameter": "PM10",
+    "tanggal": "04/10/2026 10:30:00"
+  },
+  {
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
     "station": "DKI11 Jakarta Equestrian Pulomas",
-    "ispu": "45",
+    "ispu": "44",
     "parameter": "CO",
+    "tanggal": "04/10/2026 10:30:00"
+  },
+  {
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
+    "station": "DKI04 Lubang Buaya",
+    "ispu": "64",
+    "parameter": "PM25",
+    "tanggal": "04/10/2026 10:00:00"
+  },
+  {
+    "timestamp": "2026-04-10T03:45:43Z",
+    "timestamp_local": "2026-04-10 10:45:43",
+    "station": "DKI01 Bundaran HI",
+    "ispu": "0",
+    "parameter": "NO2",
     "tanggal": "04/10/2026 10:00:00"
   }
 ]
