@@ -1,58 +1,50 @@
 [
   {
-    "timestamp": "2026-04-12T06:15:43Z",
-    "timestamp_local": "2026-04-12 13:15:43",
+    "timestamp": "2026-04-12T06:45:40Z",
+    "timestamp_local": "2026-04-12 13:45:40",
     "station": "DKI19 Pondok Rangon",
     "ispu": "61",
     "parameter": "PM25",
-    "tanggal": "04/12/2026 13:00:00"
+    "tanggal": "04/12/2026 13:30:00"
   },
   {
-    "timestamp": "2026-04-12T06:15:43Z",
-    "timestamp_local": "2026-04-12 13:15:43",
+    "timestamp": "2026-04-12T06:45:40Z",
+    "timestamp_local": "2026-04-12 13:45:40",
     "station": "DKI16 Ancol",
-    "ispu": "60",
+    "ispu": "59",
     "parameter": "PM25",
-    "tanggal": "04/12/2026 13:00:00"
+    "tanggal": "04/12/2026 13:30:00"
   },
   {
-    "timestamp": "2026-04-12T06:15:43Z",
-    "timestamp_local": "2026-04-12 13:15:43",
-    "station": "DKI17 SDN 07 Kramat Pela",
-    "ispu": "65",
-    "parameter": "PM25",
-    "tanggal": "04/12/2026 13:00:00"
-  },
-  {
-    "timestamp": "2026-04-12T06:15:43Z",
-    "timestamp_local": "2026-04-12 13:15:43",
+    "timestamp": "2026-04-12T06:45:40Z",
+    "timestamp_local": "2026-04-12 13:45:40",
     "station": "DKI20 Rusunawa Pesakih",
-    "ispu": "71",
+    "ispu": "70",
     "parameter": "PM25",
-    "tanggal": "04/12/2026 13:00:00"
+    "tanggal": "04/12/2026 13:30:00"
   },
   {
-    "timestamp": "2026-04-12T06:15:43Z",
-    "timestamp_local": "2026-04-12 13:15:43",
+    "timestamp": "2026-04-12T06:45:40Z",
+    "timestamp_local": "2026-04-12 13:45:40",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-12T06:15:43Z",
-    "timestamp_local": "2026-04-12 13:15:43",
+    "timestamp": "2026-04-12T06:45:40Z",
+    "timestamp_local": "2026-04-12 13:45:40",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "110",
     "parameter": "SO2",
     "tanggal": "04/02/2026 10:00:00"
   },
   {
-    "timestamp": "2026-04-12T06:15:43Z",
-    "timestamp_local": "2026-04-12 13:15:43",
+    "timestamp": "2026-04-12T06:45:40Z",
+    "timestamp_local": "2026-04-12 13:45:40",
     "station": "DKI95 Tebet Eco Park",
     "ispu": "56",
     "parameter": "PM25",
-    "tanggal": "04/12/2026 13:00:00"
+    "tanggal": "04/12/2026 13:30:00"
   }
 ]
