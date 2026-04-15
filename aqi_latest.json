@@ -1,82 +1,10 @@
 [
   {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
+    "timestamp": "2026-04-15T01:45:41Z",
+    "timestamp_local": "2026-04-15 08:45:41",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "63",
+    "ispu": "64",
     "parameter": "PM25",
-    "tanggal": "04/15/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
-    "station": "DKI16 Ancol",
-    "ispu": "55",
-    "parameter": "PM25",
-    "tanggal": "04/15/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
-    "station": "DKI17 SDN 07 Kramat Pela",
-    "ispu": "61",
-    "parameter": "PM25",
-    "tanggal": "04/15/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
-    "station": "DKI20 Rusunawa Pesakih",
-    "ispu": "61",
-    "parameter": "PM25",
-    "tanggal": "04/15/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
-    "station": "DKI18 Lebak Bulus",
-    "ispu": "63",
-    "parameter": "PM25",
-    "tanggal": "04/15/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
-    "station": "DKI13 TMB Gombol Paya, Kalideres",
-    "ispu": "56",
-    "parameter": "PM25",
-    "tanggal": "03/26/2026 19:30:00"
-  },
-  {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
-    "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
-    "ispu": "98",
-    "parameter": "SO2",
-    "tanggal": "04/15/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
-    "station": "DKI95 Tebet Eco Park",
-    "ispu": "56",
-    "parameter": "PM25",
-    "tanggal": "04/15/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
-    "station": "DKI96 Taman Sungai Kendal",
-    "ispu": "55",
-    "parameter": "PM25",
-    "tanggal": "04/15/2026 08:00:00"
-  },
-  {
-    "timestamp": "2026-04-15T01:15:48Z",
-    "timestamp_local": "2026-04-15 08:15:48",
-    "station": "DKI08 PPOP Ragunan",
-    "ispu": "77",
-    "parameter": "HC",
-    "tanggal": "04/15/2026 08:00:00"
+    "tanggal": "04/15/2026 08:30:00"
   }
 ]
