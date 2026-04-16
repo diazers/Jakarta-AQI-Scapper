@@ -94,12 +94,33 @@ TABLE_ROW_SELECTORS = [
 def wait_for_table(driver: webdriver.Chrome, timeout: int = PAGE_LOAD_TIMEOUT) -> str:
     """
     Wait until the station table has at least one rendered data row.
-    Tries multiple CSS selectors so a change in DataTables responsive mode
-    (or a missing dtr-control class) doesn't cause a permanent timeout.
+    First checks quickly if the table exists but is empty (site has no data),
+    then tries multiple CSS selectors for a real data row.
     Returns the selector that succeeded.
     """
     deadline = time.monotonic() + timeout
     last_exc = None
+
+    # -- Fast empty-table detection (15s) ------------------------------------
+    # If the table element exists but has no DKI rows after 15s, the site is
+    # up but serving no data — fail immediately instead of timing out at 85s.
+    try:
+        WebDriverWait(driver, 15).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody"))
+        )
+        time.sleep(3)  # let DataTables finish rendering
+        all_tds = driver.find_elements(By.CSS_SELECTOR, "table tbody tr td")
+        dki_cells = [td for td in all_tds if td.text.strip().startswith("DKI")]
+        if all_tds and not dki_cells:
+            raise TimeoutException(
+                "Table is present but contains no DKI station data — "
+                "site is up but not serving data."
+            )
+    except TimeoutException:
+        raise  # re-raise so scrape() catches it as a normal timeout
+    except Exception:
+        pass  # table not present yet, fall through to normal wait below
+    # ------------------------------------------------------------------------
 
     while time.monotonic() < deadline:
         for selector, label in TABLE_ROW_SELECTORS:
@@ -409,6 +430,10 @@ def append_csv(records: list[dict]) -> None:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    import random
+    jitter = random.randint(10, 90)  # random 10-90s delay to avoid hitting site at same time every run
+    print(f"[{datetime.now(timezone.utc).isoformat()}] Waiting {jitter}s before starting (jitter) ...")
+    time.sleep(jitter)
     print(f"[{datetime.now(timezone.utc).isoformat()}] Starting scrape ...")
     data = scrape()
 
