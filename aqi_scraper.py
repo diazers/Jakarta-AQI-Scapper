@@ -37,14 +37,15 @@ OUTPUT_JSON       = "aqi_latest.json"
 OUTPUT_CSV        = "aqi_log.csv"
 PAGE_LOAD_TIMEOUT = 60   # increased: seconds to wait for table to appear
 ENTRIES_PER_PAGE  = 50   # set the DataTable to 50 rows per page
-MAX_RETRIES       = 3    # increased from 3
-RETRY_DELAY       = 20   # increased from 10s — give the site time to recover
+MAX_RETRIES       = 5    # increased from 3
+RETRY_DELAY       = 30   # increased from 10s — give the site time to recover
 # ---------------------------------------------------------------------------
 
 
 def build_driver() -> webdriver.Chrome:
     """Create a headless Chrome WebDriver."""
     options = Options()
+    options.page_load_strategy = 'none'  # don't wait for full page load, script controls timing
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")           # required in CI/Docker
     options.add_argument("--disable-dev-shm-usage")
