@@ -35,10 +35,10 @@ JAKARTA_TZ        = timezone(timedelta(hours=7))
 PAGE_URL          = "https://udara.jakarta.go.id/lokasi_stasiun"
 OUTPUT_JSON       = "aqi_latest.json"
 OUTPUT_CSV        = "aqi_log.csv"
-PAGE_LOAD_TIMEOUT = 60   # increased: seconds to wait for table to appear
+PAGE_LOAD_TIMEOUT = 50   # increased: seconds to wait for table to appear
 ENTRIES_PER_PAGE  = 50   # set the DataTable to 50 rows per page
-MAX_RETRIES       = 5    # increased from 3
-RETRY_DELAY       = 30   # increased from 10s — give the site time to recover
+MAX_RETRIES       = 3    # increased from 3
+RETRY_DELAY       = 20   # increased from 10s — give the site time to recover
 # ---------------------------------------------------------------------------
 
 
