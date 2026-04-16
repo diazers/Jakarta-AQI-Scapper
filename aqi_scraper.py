@@ -54,11 +54,14 @@ def build_driver() -> webdriver.Chrome:
     options.add_argument("--disable-extensions")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_argument("--single-process")
+    # --single-process removed: causes renderer crashes on Linux CI
     options.add_argument("--blink-settings=imagesEnabled=false")
     options.add_argument("--disable-software-rasterizer")
     options.add_argument("--disable-features=VizDisplayCompositor")
     options.add_argument("--memory-pressure-off")
+    options.add_argument("--renderer-process-limit=1")   # limit to 1 renderer, safer than single-process
+    options.add_argument("--js-flags=--max-old-space-size=256")  # cap JS heap at 256MB
+    options.add_argument("--aggressive-cache-discard")
     options.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
