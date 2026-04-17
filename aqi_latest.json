@@ -1,0 +1,34 @@
+[
+  {
+    "timestamp": "2026-04-16T06:28:56Z",
+    "timestamp_local": "2026-04-16 13:28:56",
+    "station": "DKI19 Pondok Rangon",
+    "ispu": "80",
+    "parameter": "PM25",
+    "tanggal": "04/16/2026 13:00:00"
+  },
+  {
+    "timestamp": "2026-04-16T06:28:56Z",
+    "timestamp_local": "2026-04-16 13:28:56",
+    "station": "DKI04 Lubang Buaya",
+    "ispu": "98",
+    "parameter": "PM25",
+    "tanggal": "04/16/2026 12:00:00"
+  },
+  {
+    "timestamp": "2026-04-16T06:28:56Z",
+    "timestamp_local": "2026-04-16 13:28:56",
+    "station": "DKI01 Bundaran HI",
+    "ispu": "86",
+    "parameter": "PM25",
+    "tanggal": "04/16/2026 12:00:00"
+  },
+  {
+    "timestamp": "2026-04-16T06:28:56Z",
+    "timestamp_local": "2026-04-16 13:28:56",
+    "station": "DKI08 PPOP Ragunan",
+    "ispu": "4",
+    "parameter": "HC",
+    "tanggal": "04/16/2026 13:00:00"
+  }
+]
