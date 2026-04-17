@@ -1,10 +1,10 @@
-name: Hourly AQI Scrape
-on:
+#name: Hourly AQI Scrape
+#on:
 #  schedule:
 #    - cron: "0 * * * *"   # fallback only, may be delayed
-  workflow_dispatch:        # allows manual trigger from GitHub UI
-  repository_dispatch:      # triggered by cron-job.org
-    types: [hourly-aqi-scrape]
+#  workflow_dispatch:        # allows manual trigger from GitHub UI
+#  repository_dispatch:      # triggered by cron-job.org
+#    types: [hourly-aqi-scrape]
 
 ## env:
 ##   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
