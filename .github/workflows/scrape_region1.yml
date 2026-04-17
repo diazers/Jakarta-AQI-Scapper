@@ -1,0 +1,36 @@
+name: Scrape Region 1
+
+on:
+  # schedule:
+  #   - cron: '5 * * * *'   # every hour at :05  → 01:05, 02:05, 03:05 ...
+  workflow_dispatch:        # manual trigger from GitHub UI
+  repository_dispatch:      # triggered by cron-job.org
+    types: [region1-scrape]
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Chrome
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q google-chrome-stable
+
+      - name: Install dependencies
+        run: pip install selenium webdriver-manager PyGithub
+
+      - name: Run scraper
+        env:
+          SCRAPER_GITHUB_TOKEN: ${{ secrets.SCRAPER_GITHUB_TOKEN }}
+          GITHUB_REPO: ${{ github.repository }}
+        run: python iqair_region1.py
