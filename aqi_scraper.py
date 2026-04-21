@@ -1,12 +1,12 @@
 """
 aqi_scraper.py
-Scrapes AQI/ISPU data from udara.jakarta.go.id/lokasi_stasiun using Selenium.
+Scrapes AQI/ISPU data from udara.jakarta.go.id/lokasi_stasiun using Playwright.
 Saves results as JSON + appends new rows to a CSV log (deduplication by
 last recorded tanggal per station).
 
 Requirements:
-    pip install selenium webdriver-manager
-    Chrome must be installed on the machine.
+    pip install playwright
+    playwright install chromium
 """
 
 import csv
@@ -14,177 +14,142 @@ import json
 import os
 import sys
 import time
+import random
 from datetime import datetime, timezone, timedelta
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select, WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, WebDriverException
-
-try:
-    from webdriver_manager.chrome import ChromeDriverManager
-    USE_WEBDRIVER_MANAGER = True
-except ImportError:
-    USE_WEBDRIVER_MANAGER = False
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 # ---------------------------------------------------------------------------
 JAKARTA_TZ        = timezone(timedelta(hours=7))
 PAGE_URL          = "https://udara.jakarta.go.id/lokasi_stasiun"
 OUTPUT_JSON       = "aqi_latest.json"
 OUTPUT_CSV        = "aqi_log.csv"
-PAGE_LOAD_TIMEOUT = 60   # increased: seconds to wait for table to appear
-ENTRIES_PER_PAGE  = 50   # set the DataTable to 50 rows per page
-MAX_RETRIES       = 5    # increased from 3
-RETRY_DELAY       = 30   # increased from 10s — give the site time to recover
+PAGE_LOAD_TIMEOUT = 60_000   # milliseconds (Playwright uses ms)
+ENTRIES_PER_PAGE  = 50
+MAX_RETRIES       = 5
+RETRY_DELAY       = 30       # seconds
 # ---------------------------------------------------------------------------
 
 
-def build_driver() -> webdriver.Chrome:
-    """Create a headless Chrome WebDriver."""
-    options = Options()
-    options.page_load_strategy = 'none'  # don't wait for full page load, script controls timing
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")           # required in CI/Docker
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1280,720")
-    options.add_argument("--disable-extensions")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    # --single-process removed: causes renderer crashes on Linux CI
-    options.add_argument("--blink-settings=imagesEnabled=false")
-    options.add_argument("--disable-software-rasterizer")
-    options.add_argument("--disable-features=VizDisplayCompositor")
-    options.add_argument("--memory-pressure-off")
-    options.add_argument("--renderer-process-limit=1")   # limit to 1 renderer, safer than single-process
-    options.add_argument("--js-flags=--max-old-space-size=256")  # cap JS heap at 256MB
-    options.add_argument("--aggressive-cache-discard")
-    options.add_argument(
-        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
+def build_browser_context(playwright):
+    """Launch Playwright Chromium with stealth settings."""
+    browser = playwright.chromium.launch(
+        headless=True,
+        args=[
+            "--no-sandbox",
+            "--disable-dev-shm-usage",
+            "--disable-gpu",
+            "--window-size=1280,720",
+            "--disable-blink-features=AutomationControlled",
+            "--disable-features=VizDisplayCompositor",
+            "--aggressive-cache-discard",
+            "--blink-settings=imagesEnabled=false",
+        ]
     )
-    if USE_WEBDRIVER_MANAGER:
-        service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=options)
-    else:
-        # Assumes chromedriver is on PATH
-        driver = webdriver.Chrome(options=options)
 
-    driver.set_page_load_timeout(90)  # increased from 60
-    return driver
+    context = browser.new_context(
+        viewport={"width": 1280, "height": 720},
+        user_agent=(
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/124.0.0.0 Safari/537.36"
+        ),
+        locale="id-ID",
+        timezone_id="Asia/Jakarta",
+        java_script_enabled=True,
+        # Mask automation fingerprint
+        extra_http_headers={
+            "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        }
+    )
+
+    # Remove webdriver property to avoid bot detection
+    context.add_init_script("""
+        Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+        Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3] });
+        Object.defineProperty(navigator, 'languages', { get: () => ['id-ID', 'id', 'en-US'] });
+        window.chrome = { runtime: {} };
+    """)
+
+    return browser, context
 
 
-# ---------------------------------------------------------------------------
-# Table detection — multiple fallback selectors in order of specificity
-# ---------------------------------------------------------------------------
-
-# Each entry is (CSS selector, description). We try them in order and use
-# the first one that finds at least one element with non-empty text.
-TABLE_ROW_SELECTORS = [
-    ("table tbody tr td.dtr-control",  "dtr-control (responsive DataTables)"),
-    ("table#DataTables_Table_0 tbody tr td:first-child", "first TD of known table ID"),
-    ("table tbody tr td",              "any table tbody td"),
-]
-
-
-def wait_for_table(driver: webdriver.Chrome, timeout: int = PAGE_LOAD_TIMEOUT) -> str:
+def wait_for_table(page) -> bool:
     """
-    Wait until the station table has at least one rendered data row.
-    First checks quickly if the table exists but is empty (site has no data),
-    then tries multiple CSS selectors for a real data row.
-    Returns the selector that succeeded.
+    Wait until the station table has DKI rows.
+    Returns True if data found, False if table empty.
     """
-    deadline = time.monotonic() + timeout
-    last_exc = None
-
-    # -- Fast empty-table detection (15s) ------------------------------------
-    # If the table element exists but has no DKI rows after 15s, the site is
-    # up but serving no data — fail immediately instead of timing out at 85s.
     try:
-        WebDriverWait(driver, 15).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "table tbody"))
-        )
-        time.sleep(3)  # let DataTables finish rendering
-        all_tds = driver.find_elements(By.CSS_SELECTOR, "table tbody tr td")
-        dki_cells = [td for td in all_tds if td.text.strip().startswith("DKI")]
+        # Wait for table body to appear
+        page.wait_for_selector("table tbody", timeout=15_000)
+        page.wait_for_timeout(3_000)  # let DataTables render
+
+        # Check if DKI rows exist
+        all_tds = page.query_selector_all("table tbody tr td")
+        dki_cells = [td for td in all_tds if td.inner_text().strip().startswith("DKI")]
+
         if all_tds and not dki_cells:
-            raise TimeoutException(
-                "Table is present but contains no DKI station data — "
-                "site is up but not serving data."
-            )
-    except TimeoutException:
-        raise  # re-raise so scrape() catches it as a normal timeout
-    except Exception:
-        pass  # table not present yet, fall through to normal wait below
-    # ------------------------------------------------------------------------
+            print("[WARN] Table present but no DKI station data — site not serving data.")
+            return False
 
-    while time.monotonic() < deadline:
-        for selector, label in TABLE_ROW_SELECTORS:
+        # Wait for actual data row
+        page.wait_for_selector("table tbody tr td.dtr-control", timeout=PAGE_LOAD_TIMEOUT)
+        print("[INFO] Table detected via selector: dtr-control (responsive DataTables)")
+        return True
+
+    except PlaywrightTimeoutError:
+        # Fallback selectors
+        for selector, label in [
+            ("table#DataTables_Table_0 tbody tr td:first-child", "first TD of known table ID"),
+            ("table tbody tr td", "any table tbody td"),
+        ]:
             try:
-                remaining = max(1, int(deadline - time.monotonic()))
-                WebDriverWait(driver, min(remaining, 10)).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-                )
-                # Verify at least one cell actually has text (not a loading spinner row)
-                els = driver.find_elements(By.CSS_SELECTOR, selector)
-                if any(el.text.strip() for el in els):
+                page.wait_for_selector(selector, timeout=10_000)
+                els = page.query_selector_all(selector)
+                if any(el.inner_text().strip() for el in els):
                     print(f"[INFO] Table detected via selector: {label}")
-                    return selector
-            except TimeoutException as e:
-                last_exc = e
+                    return True
+            except PlaywrightTimeoutError:
                 continue
-            except Exception as e:
-                last_exc = e
-                continue
-        time.sleep(2)  # brief pause before retrying the selector loop
 
-    raise TimeoutException(
-        f"Table not found after {timeout}s with any known selector. Last error: {last_exc}"
-    )
+        return False
 
 
-def set_entries_per_page(driver: webdriver.Chrome, n: int = ENTRIES_PER_PAGE):
-    """Change the DataTable 'show N entries' dropdown then wait for re-render."""
+def set_entries_per_page(page, n: int = ENTRIES_PER_PAGE):
+    """Change the DataTable 'show N entries' dropdown."""
     try:
-        select_el = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "select[name]"))
-        )
-        Select(select_el).select_by_value(str(n))
-        time.sleep(3)           # let DataTable re-render (slightly longer)
-        wait_for_table(driver)
+        page.wait_for_selector("select[name]", timeout=10_000)
+        page.select_option("select[name]", str(n))
+        page.wait_for_timeout(3_000)
         print(f"[INFO] Set entries-per-page to {n}")
     except Exception as e:
         print(f"[WARN] Could not set entries-per-page: {e}")
 
 
-def parse_current_page(driver: webdriver.Chrome) -> list[dict]:
+def parse_current_page(page) -> list[dict]:
     """Extract all visible station rows from the current table page."""
     rows = []
-    trs  = driver.find_elements(By.CSS_SELECTOR, "table tbody tr")
+    trs = page.query_selector_all("table tbody tr")
 
     for tr in trs:
-        tds = tr.find_elements(By.TAG_NAME, "td")
+        tds = tr.query_selector_all("td")
         if len(tds) < 4:
             continue
 
-        station = tds[0].text.strip()
-
-        # Skip non-station rows (legend rows, empty rows)
+        station = tds[0].inner_text().strip()
         if not station.startswith("DKI"):
             continue
 
-        # ISPU: prefer the badge <span>, fall back to raw cell text
+        # ISPU: prefer badge span, fall back to cell text
         try:
-            ispu = tds[1].find_element(By.TAG_NAME, "span").text.strip()
+            span = tds[1].query_selector("span")
+            ispu = span.inner_text().strip() if span else tds[1].inner_text().strip()
         except Exception:
-            ispu = tds[1].text.strip()
+            ispu = tds[1].inner_text().strip()
 
-        parameter = tds[2].text.strip()
-        tanggal   = tds[3].text.strip()
+        parameter = tds[2].inner_text().strip()
+        tanggal   = tds[3].inner_text().strip()
 
         rows.append({
             "station":   station,
@@ -196,11 +161,10 @@ def parse_current_page(driver: webdriver.Chrome) -> list[dict]:
     return rows
 
 
-def go_to_next_page(driver: webdriver.Chrome) -> bool:
+def go_to_next_page(page) -> bool:
     """
     Click the DataTable Next button.
-    Returns True if navigation succeeded, False if already on the last page.
-    Tries multiple common DataTables selectors for the Next button.
+    Returns True if navigated, False if on last page.
     """
     selectors = [
         "a.paginate_button.next",
@@ -209,45 +173,39 @@ def go_to_next_page(driver: webdriver.Chrome) -> bool:
         "#DataTables_Table_0_next",
         "[id$='_next']",
     ]
+
+    next_btn = None
+    for sel in selectors:
+        next_btn = page.query_selector(sel)
+        if next_btn:
+            break
+
+    if not next_btn:
+        print("[WARN] Could not find Next button.")
+        return False
+
+    classes = next_btn.get_attribute("class") or ""
+    if "disabled" in classes:
+        return False
+
     try:
-        next_btn = None
-        for sel in selectors:
-            try:
-                next_btn = driver.find_element(By.CSS_SELECTOR, sel)
-                break
-            except Exception:
-                continue
+        first_row_before = page.query_selector("table tbody tr td").inner_text().strip()
+    except Exception:
+        first_row_before = ""
 
-        if next_btn is None:
-            print("[WARN] Could not find Next button with any known selector.")
-            return False
+    try:
+        next_btn.scroll_into_view_if_needed()
+        page.wait_for_timeout(500)
+        next_btn.click()
 
-        classes = next_btn.get_attribute("class") or ""
-        if "disabled" in classes:
-            return False
-
-        try:
-            first_row_before = driver.find_element(
-                By.CSS_SELECTOR, "table tbody tr td"
-            ).text.strip()
-        except Exception:
-            first_row_before = ""
-
-        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", next_btn)
-        time.sleep(0.5)
-        driver.execute_script("arguments[0].click();", next_btn)
-
-        def page_changed(d):
-            try:
-                # Accept any first-cell change, not just DKI-prefixed
-                first_row = d.find_element(
-                    By.CSS_SELECTOR, "table tbody tr td"
-                ).text.strip()
-                return first_row != first_row_before
-            except Exception:
-                return False
-
-        WebDriverWait(driver, 20).until(page_changed)  # increased from 15
+        # Wait for page to change
+        page.wait_for_function(
+            f"""() => {{
+                const td = document.querySelector('table tbody tr td');
+                return td && td.innerText.trim() !== {json.dumps(first_row_before)};
+            }}""",
+            timeout=20_000
+        )
         return True
 
     except Exception as e:
@@ -256,70 +214,70 @@ def go_to_next_page(driver: webdriver.Chrome) -> bool:
 
 
 def scrape() -> list[dict]:
-    """Launch Chrome, navigate the table pages, return all scraped records."""
+    """Launch Playwright, navigate the table pages, return all scraped records."""
     now_utc         = datetime.now(timezone.utc)
     now_jakarta     = now_utc.astimezone(JAKARTA_TZ)
     timestamp       = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
     timestamp_local = now_jakarta.strftime("%Y-%m-%d %H:%M:%S")
 
-    driver      = None
     all_records = []
 
-    try:
-        print("[INFO] Launching Chrome …")
-        driver = build_driver()
+    with sync_playwright() as p:
+        browser, context = build_browser_context(p)
+        page = context.new_page()
 
-        print(f"[INFO] Loading {PAGE_URL} …")
+        try:
+            print("[INFO] Launching Chrome via Playwright…")
+            print(f"[INFO] Loading {PAGE_URL} …")
 
-        for attempt in range(1, MAX_RETRIES + 1):
-            try:
-                if attempt > 1:
-                    print(f"[INFO] Retry {attempt}/{MAX_RETRIES} — refreshing page …")
-                    # Full quit + rebuild on retry to clear any stale state
-                    try:
-                        driver.quit()
-                    except Exception:
-                        pass
-                    driver = build_driver()
+            for attempt in range(1, MAX_RETRIES + 1):
+                try:
+                    if attempt > 1:
+                        print(f"[INFO] Retry {attempt}/{MAX_RETRIES} — refreshing page …")
 
-                driver.get(PAGE_URL)
-                wait_for_table(driver)
-                print(f"[INFO] Page loaded successfully on attempt {attempt}.")
-                break
-            except TimeoutException as e:
-                print(f"[WARN] Attempt {attempt}/{MAX_RETRIES} timed out: {e}", file=sys.stderr)
-                if attempt < MAX_RETRIES:
-                    print(f"[INFO] Waiting {RETRY_DELAY}s before retrying …")
-                    time.sleep(RETRY_DELAY)
-                else:
-                    print("[WARN] All attempts failed — site appears unavailable. Skipping this run.", file=sys.stderr)
-                    return []
+                    page.goto(PAGE_URL, wait_until="domcontentloaded", timeout=90_000)
 
-        set_entries_per_page(driver, ENTRIES_PER_PAGE)
+                    if wait_for_table(page):
+                        print(f"[INFO] Page loaded successfully on attempt {attempt}.")
+                        break
+                    else:
+                        raise PlaywrightTimeoutError("No DKI data in table")
 
-        page = 1
-        while True:
-            rows = parse_current_page(driver)
-            print(f"[INFO] Page {page}: found {len(rows)} station rows")
+                except PlaywrightTimeoutError as e:
+                    print(f"[WARN] Attempt {attempt}/{MAX_RETRIES} timed out: {e}")
+                    if attempt < MAX_RETRIES:
+                        print(f"[INFO] Waiting {RETRY_DELAY}s before retrying …")
+                        time.sleep(RETRY_DELAY)
+                    else:
+                        print("[WARN] All attempts failed — site appears unavailable. Skipping this run.")
+                        return []
 
-            for row in rows:
-                all_records.append({
-                    "timestamp":       timestamp,
-                    "timestamp_local": timestamp_local,
-                    **row,
-                })
+            set_entries_per_page(page, ENTRIES_PER_PAGE)
 
-            if not go_to_next_page(driver):
-                print(f"[INFO] Reached last page ({page}). Done scraping.")
-                break
-            page += 1
+            page_num = 1
+            while True:
+                rows = parse_current_page(page)
+                print(f"[INFO] Page {page_num}: found {len(rows)} station rows")
 
-    except WebDriverException as e:
-        print(f"[ERROR] WebDriver error: {e}", file=sys.stderr)
-        return []
-    finally:
-        if driver:
-            driver.quit()
+                for row in rows:
+                    all_records.append({
+                        "timestamp":       timestamp,
+                        "timestamp_local": timestamp_local,
+                        **row,
+                    })
+
+                if not go_to_next_page(page):
+                    print(f"[INFO] Reached last page ({page_num}). Done scraping.")
+                    break
+                page_num += 1
+
+        except Exception as e:
+            print(f"[ERROR] Unexpected error: {e}", file=sys.stderr)
+            return []
+
+        finally:
+            context.close()
+            browser.close()
 
     return all_records
 
@@ -331,7 +289,6 @@ def scrape() -> list[dict]:
 def load_last_tanggal_per_station(csv_path: str) -> dict:
     """
     Read the CSV from the BOTTOM UP and return {station: last_tanggal}.
-    Stops as soon as every station has been seen, skipping all historical rows.
     Returns an empty dict if the file does not exist yet.
     """
     if not os.path.isfile(csv_path):
@@ -430,16 +387,16 @@ def append_csv(records: list[dict]) -> None:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    import random
-    jitter = random.randint(5, 30)  # random 10-90s delay to avoid hitting site at same time every run
+    jitter = random.randint(5, 30)
     print(f"[{datetime.now(timezone.utc).isoformat()}] Waiting {jitter}s before starting (jitter) ...")
     time.sleep(jitter)
     print(f"[{datetime.now(timezone.utc).isoformat()}] Starting scrape ...")
+
     data = scrape()
 
     if not data:
         print("[ERROR] No data scraped — site was likely unavailable.", file=sys.stderr)
-        sys.exit(1)  # exit 1 so GitHub Actions marks the run as failed
+        sys.exit(1)
 
     is_first_run = not os.path.isfile(OUTPUT_CSV)
 
