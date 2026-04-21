@@ -431,7 +431,7 @@ def append_csv(records: list[dict]) -> None:
 
 if __name__ == "__main__":
     import random
-    jitter = random.randint(10, 90)  # random 10-90s delay to avoid hitting site at same time every run
+    jitter = random.randint(5, 30)  # random 10-90s delay to avoid hitting site at same time every run
     print(f"[{datetime.now(timezone.utc).isoformat()}] Waiting {jitter}s before starting (jitter) ...")
     time.sleep(jitter)
     print(f"[{datetime.now(timezone.utc).isoformat()}] Starting scrape ...")
