@@ -1,50 +1,50 @@
 [
   {
-    "timestamp": "2026-04-22T08:45:17Z",
-    "timestamp_local": "2026-04-22 15:45:17",
+    "timestamp": "2026-04-22T09:15:12Z",
+    "timestamp_local": "2026-04-22 16:15:12",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "101",
+    "ispu": "102",
     "parameter": "PM25",
-    "tanggal": "04/22/2026 15:30:00"
+    "tanggal": "04/22/2026 16:00:00"
   },
   {
-    "timestamp": "2026-04-22T08:45:17Z",
-    "timestamp_local": "2026-04-22 15:45:17",
+    "timestamp": "2026-04-22T09:15:12Z",
+    "timestamp_local": "2026-04-22 16:15:12",
     "station": "DKI16 Ancol",
-    "ispu": "84",
+    "ispu": "85",
     "parameter": "PM25",
-    "tanggal": "04/22/2026 15:30:00"
+    "tanggal": "04/22/2026 16:00:00"
   },
   {
-    "timestamp": "2026-04-22T08:45:17Z",
-    "timestamp_local": "2026-04-22 15:45:17",
+    "timestamp": "2026-04-22T09:15:12Z",
+    "timestamp_local": "2026-04-22 16:15:12",
     "station": "DKI20 Rusunawa Pesakih",
     "ispu": "114",
     "parameter": "PM25",
-    "tanggal": "04/22/2026 15:00:00"
-  },
-  {
-    "timestamp": "2026-04-22T08:45:17Z",
-    "timestamp_local": "2026-04-22 15:45:17",
-    "station": "DKI18 Lebak Bulus",
-    "ispu": "98",
-    "parameter": "PM25",
     "tanggal": "04/22/2026 15:30:00"
   },
   {
-    "timestamp": "2026-04-22T08:45:17Z",
-    "timestamp_local": "2026-04-22 15:45:17",
+    "timestamp": "2026-04-22T09:15:12Z",
+    "timestamp_local": "2026-04-22 16:15:12",
+    "station": "DKI18 Lebak Bulus",
+    "ispu": "98",
+    "parameter": "PM25",
+    "tanggal": "04/22/2026 16:00:00"
+  },
+  {
+    "timestamp": "2026-04-22T09:15:12Z",
+    "timestamp_local": "2026-04-22 16:15:12",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-22T08:45:17Z",
-    "timestamp_local": "2026-04-22 15:45:17",
+    "timestamp": "2026-04-22T09:15:12Z",
+    "timestamp_local": "2026-04-22 16:15:12",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
-    "ispu": "131",
+    "ispu": "129",
     "parameter": "PM25",
-    "tanggal": "04/22/2026 15:00:00"
+    "tanggal": "04/22/2026 15:30:00"
   }
 ]
