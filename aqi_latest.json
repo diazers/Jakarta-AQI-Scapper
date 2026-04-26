@@ -1,82 +1,26 @@
 [
   {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
+    "timestamp": "2026-04-26T12:15:21Z",
+    "timestamp_local": "2026-04-26 19:15:21",
     "station": "DKI16 Ancol",
     "ispu": "32",
     "parameter": "PM25",
-    "tanggal": "04/26/2026 18:30:00"
+    "tanggal": "04/26/2026 19:00:00"
   },
   {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
-    "station": "DKI18 Lebak Bulus",
-    "ispu": "60",
-    "parameter": "PM25",
-    "tanggal": "04/26/2026 18:30:00"
-  },
-  {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
+    "timestamp": "2026-04-26T12:15:21Z",
+    "timestamp_local": "2026-04-26 19:15:21",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
+    "timestamp": "2026-04-26T12:15:21Z",
+    "timestamp_local": "2026-04-26 19:15:21",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "85",
     "parameter": "SO2",
     "tanggal": "04/26/2026 02:30:00"
-  },
-  {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
-    "station": "DKI05 Kebun Jeruk",
-    "ispu": "56",
-    "parameter": "PM25",
-    "tanggal": "04/26/2026 18:00:00"
-  },
-  {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
-    "station": "DKI03 Jagakarsa",
-    "ispu": "45",
-    "parameter": "PM25",
-    "tanggal": "04/26/2026 18:00:00"
-  },
-  {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
-    "station": "DKI02 Kelapa Gading",
-    "ispu": "55",
-    "parameter": "PM25",
-    "tanggal": "04/26/2026 18:00:00"
-  },
-  {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
-    "station": "DKI96 Taman Sungai Kendal",
-    "ispu": "56",
-    "parameter": "PM25",
-    "tanggal": "04/26/2026 18:30:00"
-  },
-  {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
-    "station": "DKI04 Lubang Buaya",
-    "ispu": "89",
-    "parameter": "PM25",
-    "tanggal": "04/26/2026 18:00:00"
-  },
-  {
-    "timestamp": "2026-04-26T11:45:32Z",
-    "timestamp_local": "2026-04-26 18:45:32",
-    "station": "DKI01 Bundaran HI",
-    "ispu": "65",
-    "parameter": "PM25",
-    "tanggal": "04/26/2026 18:00:00"
   }
 ]
