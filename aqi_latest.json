@@ -1,33 +1,57 @@
 [
   {
-    "timestamp": "2026-04-26T02:15:31Z",
-    "timestamp_local": "2026-04-26 09:15:31",
-    "station": "DKI18 Lebak Bulus",
-    "ispu": "60",
-    "parameter": "PM25",
-    "tanggal": "04/26/2026 09:00:00"
-  },
-  {
-    "timestamp": "2026-04-26T02:15:31Z",
-    "timestamp_local": "2026-04-26 09:15:31",
+    "timestamp": "2026-04-26T02:45:33Z",
+    "timestamp_local": "2026-04-26 09:45:33",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-26T02:15:31Z",
-    "timestamp_local": "2026-04-26 09:15:31",
+    "timestamp": "2026-04-26T02:45:33Z",
+    "timestamp_local": "2026-04-26 09:45:33",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "85",
     "parameter": "SO2",
     "tanggal": "04/26/2026 02:30:00"
   },
   {
-    "timestamp": "2026-04-26T02:15:31Z",
-    "timestamp_local": "2026-04-26 09:15:31",
-    "station": "DKI96 Taman Sungai Kendal",
+    "timestamp": "2026-04-26T02:45:33Z",
+    "timestamp_local": "2026-04-26 09:45:33",
+    "station": "DKI05 Kebun Jeruk",
     "ispu": "60",
+    "parameter": "PM25",
+    "tanggal": "04/26/2026 09:00:00"
+  },
+  {
+    "timestamp": "2026-04-26T02:45:33Z",
+    "timestamp_local": "2026-04-26 09:45:33",
+    "station": "DKI03 Jagakarsa",
+    "ispu": "46",
+    "parameter": "PM25",
+    "tanggal": "04/26/2026 09:00:00"
+  },
+  {
+    "timestamp": "2026-04-26T02:45:33Z",
+    "timestamp_local": "2026-04-26 09:45:33",
+    "station": "DKI02 Kelapa Gading",
+    "ispu": "58",
+    "parameter": "PM25",
+    "tanggal": "04/26/2026 09:00:00"
+  },
+  {
+    "timestamp": "2026-04-26T02:45:33Z",
+    "timestamp_local": "2026-04-26 09:45:33",
+    "station": "DKI04 Lubang Buaya",
+    "ispu": "87",
+    "parameter": "PM25",
+    "tanggal": "04/26/2026 09:00:00"
+  },
+  {
+    "timestamp": "2026-04-26T02:45:33Z",
+    "timestamp_local": "2026-04-26 09:45:33",
+    "station": "DKI01 Bundaran HI",
+    "ispu": "71",
     "parameter": "PM25",
     "tanggal": "04/26/2026 09:00:00"
   }
