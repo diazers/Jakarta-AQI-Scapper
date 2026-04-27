@@ -1,42 +1,74 @@
 [
   {
-    "timestamp": "2026-04-27T09:45:13Z",
-    "timestamp_local": "2026-04-27 16:45:13",
+    "timestamp": "2026-04-27T10:15:16Z",
+    "timestamp_local": "2026-04-27 17:15:16",
     "station": "DKI16 Ancol",
     "ispu": "50",
     "parameter": "PM25",
-    "tanggal": "04/27/2026 16:30:00"
+    "tanggal": "04/27/2026 17:00:00"
   },
   {
-    "timestamp": "2026-04-27T09:45:13Z",
-    "timestamp_local": "2026-04-27 16:45:13",
-    "station": "DKI18 Lebak Bulus",
-    "ispu": "68",
+    "timestamp": "2026-04-27T10:15:16Z",
+    "timestamp_local": "2026-04-27 17:15:16",
+    "station": "DKI20 Rusunawa Pesakih",
+    "ispu": "75",
     "parameter": "PM25",
     "tanggal": "04/27/2026 16:30:00"
   },
   {
-    "timestamp": "2026-04-27T09:45:13Z",
-    "timestamp_local": "2026-04-27 16:45:13",
+    "timestamp": "2026-04-27T10:15:16Z",
+    "timestamp_local": "2026-04-27 17:15:16",
+    "station": "DKI18 Lebak Bulus",
+    "ispu": "68",
+    "parameter": "PM25",
+    "tanggal": "04/27/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-04-27T10:15:16Z",
+    "timestamp_local": "2026-04-27 17:15:16",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-27T09:45:13Z",
-    "timestamp_local": "2026-04-27 16:45:13",
+    "timestamp": "2026-04-27T10:15:16Z",
+    "timestamp_local": "2026-04-27 17:15:16",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "86",
     "parameter": "SO2",
-    "tanggal": "04/27/2026 16:00:00"
+    "tanggal": "04/27/2026 16:30:00"
   },
   {
-    "timestamp": "2026-04-27T09:45:13Z",
-    "timestamp_local": "2026-04-27 16:45:13",
+    "timestamp": "2026-04-27T10:15:16Z",
+    "timestamp_local": "2026-04-27 17:15:16",
+    "station": "DKI96 Taman Sungai Kendal",
+    "ispu": "61",
+    "parameter": "PM25",
+    "tanggal": "04/27/2026 16:30:00"
+  },
+  {
+    "timestamp": "2026-04-27T10:15:16Z",
+    "timestamp_local": "2026-04-27 17:15:16",
+    "station": "DKI12 GOR Cendrawasih",
+    "ispu": "183",
+    "parameter": "SO2",
+    "tanggal": "04/27/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-04-27T10:15:16Z",
+    "timestamp_local": "2026-04-27 17:15:16",
+    "station": "DKI08 PPOP Ragunan",
+    "ispu": "125",
+    "parameter": "HC",
+    "tanggal": "04/27/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-04-27T10:15:16Z",
+    "timestamp_local": "2026-04-27 17:15:16",
     "station": "DKI09 GOR Ciracas",
     "ispu": "64",
     "parameter": "PM25",
-    "tanggal": "04/27/2026 16:30:00"
+    "tanggal": "04/27/2026 17:00:00"
   }
 ]
