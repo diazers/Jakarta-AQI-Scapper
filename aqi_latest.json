@@ -1,58 +1,114 @@
 [
   {
-    "timestamp": "2026-04-27T23:15:16Z",
-    "timestamp_local": "2026-04-28 06:15:16",
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
     "station": "DKI16 Ancol",
-    "ispu": "48",
+    "ispu": "45",
+    "parameter": "PM25",
+    "tanggal": "04/28/2026 06:30:00"
+  },
+  {
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
+    "station": "DKI20 Rusunawa Pesakih",
+    "ispu": "73",
     "parameter": "PM25",
     "tanggal": "04/28/2026 06:00:00"
   },
   {
-    "timestamp": "2026-04-27T23:15:16Z",
-    "timestamp_local": "2026-04-28 06:15:16",
-    "station": "DKI20 Rusunawa Pesakih",
-    "ispu": "74",
-    "parameter": "PM25",
-    "tanggal": "04/28/2026 05:30:00"
-  },
-  {
-    "timestamp": "2026-04-27T23:15:16Z",
-    "timestamp_local": "2026-04-28 06:15:16",
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
     "station": "DKI18 Lebak Bulus",
     "ispu": "88",
     "parameter": "PM25",
-    "tanggal": "04/28/2026 06:00:00"
+    "tanggal": "04/28/2026 06:30:00"
   },
   {
-    "timestamp": "2026-04-27T23:15:16Z",
-    "timestamp_local": "2026-04-28 06:15:16",
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-27T23:15:16Z",
-    "timestamp_local": "2026-04-28 06:15:16",
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
-    "ispu": "89",
+    "ispu": "90",
     "parameter": "SO2",
-    "tanggal": "04/28/2026 05:30:00"
+    "tanggal": "04/28/2026 06:00:00"
   },
   {
-    "timestamp": "2026-04-27T23:15:16Z",
-    "timestamp_local": "2026-04-28 06:15:16",
-    "station": "DKI96 Taman Sungai Kendal",
-    "ispu": "29",
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
+    "station": "DKI05 Kebun Jeruk",
+    "ispu": "75",
     "parameter": "PM25",
-    "tanggal": "04/28/2026 05:30:00"
+    "tanggal": "04/28/2026 06:00:00"
   },
   {
-    "timestamp": "2026-04-27T23:15:16Z",
-    "timestamp_local": "2026-04-28 06:15:16",
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
+    "station": "DKI03 Jagakarsa",
+    "ispu": "65",
+    "parameter": "PM25",
+    "tanggal": "04/28/2026 06:00:00"
+  },
+  {
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
+    "station": "DKI02 Kelapa Gading",
+    "ispu": "63",
+    "parameter": "PM25",
+    "tanggal": "04/28/2026 06:00:00"
+  },
+  {
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
+    "station": "DKI96 Taman Sungai Kendal",
+    "ispu": "25",
+    "parameter": "PM25",
+    "tanggal": "04/28/2026 06:00:00"
+  },
+  {
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
+    "station": "DKI04 Lubang Buaya",
+    "ispu": "102",
+    "parameter": "PM25",
+    "tanggal": "04/28/2026 06:00:00"
+  },
+  {
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
+    "station": "DKI01 Bundaran HI",
+    "ispu": "73",
+    "parameter": "PM25",
+    "tanggal": "04/28/2026 06:00:00"
+  },
+  {
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
+    "station": "DKI12 GOR Cendrawasih",
+    "ispu": "189",
+    "parameter": "SO2",
+    "tanggal": "04/28/2026 06:30:00"
+  },
+  {
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
+    "station": "DKI08 PPOP Ragunan",
+    "ispu": "50",
+    "parameter": "HC",
+    "tanggal": "04/28/2026 06:30:00"
+  },
+  {
+    "timestamp": "2026-04-27T23:45:26Z",
+    "timestamp_local": "2026-04-28 06:45:26",
     "station": "DKI09 GOR Ciracas",
     "ispu": "84",
     "parameter": "PM25",
-    "tanggal": "04/28/2026 06:00:00"
+    "tanggal": "04/28/2026 06:30:00"
   }
 ]
