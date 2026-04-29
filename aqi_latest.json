@@ -1,66 +1,106 @@
 [
   {
-    "timestamp": "2026-04-29T19:15:13Z",
-    "timestamp_local": "2026-04-30 02:15:13",
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "98",
+    "ispu": "99",
     "parameter": "PM25",
-    "tanggal": "04/30/2026 02:00:00"
+    "tanggal": "04/30/2026 02:30:00"
   },
   {
-    "timestamp": "2026-04-29T19:15:13Z",
-    "timestamp_local": "2026-04-30 02:15:13",
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
     "station": "DKI16 Ancol",
-    "ispu": "71",
+    "ispu": "70",
     "parameter": "PM25",
-    "tanggal": "04/30/2026 02:00:00"
+    "tanggal": "04/30/2026 02:30:00"
   },
   {
-    "timestamp": "2026-04-29T19:15:13Z",
-    "timestamp_local": "2026-04-30 02:15:13",
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
     "station": "DKI20 Rusunawa Pesakih",
     "ispu": "91",
     "parameter": "PM25",
-    "tanggal": "04/30/2026 01:30:00"
-  },
-  {
-    "timestamp": "2026-04-29T19:15:13Z",
-    "timestamp_local": "2026-04-30 02:15:13",
-    "station": "DKI18 Lebak Bulus",
-    "ispu": "100",
-    "parameter": "PM25",
     "tanggal": "04/30/2026 02:00:00"
   },
   {
-    "timestamp": "2026-04-29T19:15:13Z",
-    "timestamp_local": "2026-04-30 02:15:13",
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
+    "station": "DKI18 Lebak Bulus",
+    "ispu": "100",
+    "parameter": "PM25",
+    "tanggal": "04/30/2026 02:30:00"
+  },
+  {
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-04-29T19:15:13Z",
-    "timestamp_local": "2026-04-30 02:15:13",
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "83",
     "parameter": "SO2",
-    "tanggal": "04/30/2026 01:30:00"
+    "tanggal": "04/30/2026 02:00:00"
   },
   {
-    "timestamp": "2026-04-29T19:15:13Z",
-    "timestamp_local": "2026-04-30 02:15:13",
-    "station": "DKI12 GOR Cendrawasih",
-    "ispu": "192",
-    "parameter": "SO2",
-    "tanggal": "04/30/2026 01:30:00"
-  },
-  {
-    "timestamp": "2026-04-29T19:15:13Z",
-    "timestamp_local": "2026-04-30 02:15:13",
-    "station": "DKI09 GOR Ciracas",
-    "ispu": "91",
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
+    "station": "DKI05 Kebun Jeruk",
+    "ispu": "102",
     "parameter": "PM25",
     "tanggal": "04/30/2026 02:00:00"
+  },
+  {
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
+    "station": "DKI03 Jagakarsa",
+    "ispu": "63",
+    "parameter": "PM25",
+    "tanggal": "04/30/2026 02:00:00"
+  },
+  {
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
+    "station": "DKI02 Kelapa Gading",
+    "ispu": "84",
+    "parameter": "PM25",
+    "tanggal": "04/30/2026 02:00:00"
+  },
+  {
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
+    "station": "DKI04 Lubang Buaya",
+    "ispu": "101",
+    "parameter": "PM25",
+    "tanggal": "04/30/2026 02:00:00"
+  },
+  {
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
+    "station": "DKI01 Bundaran HI",
+    "ispu": "88",
+    "parameter": "PM25",
+    "tanggal": "04/30/2026 02:00:00"
+  },
+  {
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
+    "station": "DKI12 GOR Cendrawasih",
+    "ispu": "191",
+    "parameter": "SO2",
+    "tanggal": "04/30/2026 02:30:00"
+  },
+  {
+    "timestamp": "2026-04-29T19:45:26Z",
+    "timestamp_local": "2026-04-30 02:45:26",
+    "station": "DKI09 GOR Ciracas",
+    "ispu": "94",
+    "parameter": "PM25",
+    "tanggal": "04/30/2026 02:30:00"
   }
 ]
