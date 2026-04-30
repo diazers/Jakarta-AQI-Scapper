@@ -1,26 +1,42 @@
 [
   {
-    "timestamp": "2026-04-30T06:15:21Z",
-    "timestamp_local": "2026-04-30 13:15:21",
+    "timestamp": "2026-04-30T06:45:10Z",
+    "timestamp_local": "2026-04-30 13:45:10",
     "station": "DKI19 Pondok Rangon",
     "ispu": "94",
     "parameter": "PM25",
+    "tanggal": "04/30/2026 13:30:00"
+  },
+  {
+    "timestamp": "2026-04-30T06:45:10Z",
+    "timestamp_local": "2026-04-30 13:45:10",
+    "station": "DKI04 Lubang Buaya",
+    "ispu": "95",
+    "parameter": "PM25",
     "tanggal": "04/30/2026 13:00:00"
   },
   {
-    "timestamp": "2026-04-30T06:15:21Z",
-    "timestamp_local": "2026-04-30 13:15:21",
+    "timestamp": "2026-04-30T06:45:10Z",
+    "timestamp_local": "2026-04-30 13:45:10",
+    "station": "DKI01 Bundaran HI",
+    "ispu": "84",
+    "parameter": "PM25",
+    "tanggal": "04/30/2026 13:00:00"
+  },
+  {
+    "timestamp": "2026-04-30T06:45:10Z",
+    "timestamp_local": "2026-04-30 13:45:10",
     "station": "DKI12 GOR Cendrawasih",
     "ispu": "188",
     "parameter": "SO2",
-    "tanggal": "04/30/2026 13:00:00"
+    "tanggal": "04/30/2026 13:30:00"
   },
   {
-    "timestamp": "2026-04-30T06:15:21Z",
-    "timestamp_local": "2026-04-30 13:15:21",
+    "timestamp": "2026-04-30T06:45:10Z",
+    "timestamp_local": "2026-04-30 13:45:10",
     "station": "DKI09 GOR Ciracas",
     "ispu": "99",
     "parameter": "PM25",
-    "tanggal": "04/30/2026 13:00:00"
+    "tanggal": "04/30/2026 13:30:00"
   }
 ]
