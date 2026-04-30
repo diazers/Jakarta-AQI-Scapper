@@ -1,10 +1,10 @@
 [
   {
-    "timestamp": "2026-04-30T14:15:15Z",
-    "timestamp_local": "2026-04-30 21:15:15",
+    "timestamp": "2026-04-30T14:45:32Z",
+    "timestamp_local": "2026-04-30 21:45:32",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "88",
+    "ispu": "86",
     "parameter": "PM25",
-    "tanggal": "04/30/2026 21:00:00"
+    "tanggal": "04/30/2026 21:30:00"
   }
 ]
