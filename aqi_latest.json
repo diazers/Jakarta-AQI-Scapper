@@ -1,106 +1,66 @@
 [
   {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
+    "timestamp": "2026-05-03T00:15:22Z",
+    "timestamp_local": "2026-05-03 07:15:22",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "109",
+    "ispu": "110",
     "parameter": "PM25",
-    "tanggal": "05/03/2026 06:30:00"
+    "tanggal": "05/03/2026 07:00:00"
   },
   {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
+    "timestamp": "2026-05-03T00:15:22Z",
+    "timestamp_local": "2026-05-03 07:15:22",
     "station": "DKI16 Ancol",
-    "ispu": "73",
+    "ispu": "74",
     "parameter": "PM25",
-    "tanggal": "05/03/2026 06:30:00"
+    "tanggal": "05/03/2026 07:00:00"
   },
   {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
+    "timestamp": "2026-05-03T00:15:22Z",
+    "timestamp_local": "2026-05-03 07:15:22",
     "station": "DKI20 Rusunawa Pesakih",
-    "ispu": "88",
+    "ispu": "89",
     "parameter": "PM25",
-    "tanggal": "05/03/2026 06:30:00"
+    "tanggal": "05/03/2026 07:00:00"
   },
   {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
+    "timestamp": "2026-05-03T00:15:22Z",
+    "timestamp_local": "2026-05-03 07:15:22",
     "station": "DKI18 Lebak Bulus",
-    "ispu": "93",
+    "ispu": "94",
     "parameter": "PM25",
-    "tanggal": "05/03/2026 06:30:00"
+    "tanggal": "05/03/2026 07:00:00"
   },
   {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
+    "timestamp": "2026-05-03T00:15:22Z",
+    "timestamp_local": "2026-05-03 07:15:22",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
+    "timestamp": "2026-05-03T00:15:22Z",
+    "timestamp_local": "2026-05-03 07:15:22",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "69",
     "parameter": "SO2",
-    "tanggal": "05/03/2026 06:30:00"
+    "tanggal": "05/03/2026 07:00:00"
   },
   {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
-    "station": "DKI05 Kebun Jeruk",
-    "ispu": "94",
-    "parameter": "PM25",
-    "tanggal": "05/03/2026 06:00:00"
-  },
-  {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
-    "station": "DKI03 Jagakarsa",
-    "ispu": "58",
-    "parameter": "PM25",
-    "tanggal": "05/03/2026 06:00:00"
-  },
-  {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
-    "station": "DKI02 Kelapa Gading",
-    "ispu": "104",
-    "parameter": "PM25",
-    "tanggal": "05/03/2026 06:00:00"
-  },
-  {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
-    "station": "DKI04 Lubang Buaya",
-    "ispu": "119",
-    "parameter": "PM25",
-    "tanggal": "05/03/2026 06:00:00"
-  },
-  {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
-    "station": "DKI01 Bundaran HI",
-    "ispu": "0",
-    "parameter": "CO",
-    "tanggal": "05/03/2026 06:00:00"
-  },
-  {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
+    "timestamp": "2026-05-03T00:15:22Z",
+    "timestamp_local": "2026-05-03 07:15:22",
     "station": "DKI12 GOR Cendrawasih",
     "ispu": "202",
     "parameter": "SO2",
-    "tanggal": "05/03/2026 06:30:00"
+    "tanggal": "05/03/2026 07:00:00"
   },
   {
-    "timestamp": "2026-05-02T23:45:35Z",
-    "timestamp_local": "2026-05-03 06:45:35",
+    "timestamp": "2026-05-03T00:15:22Z",
+    "timestamp_local": "2026-05-03 07:15:22",
     "station": "DKI09 GOR Ciracas",
-    "ispu": "90",
+    "ispu": "91",
     "parameter": "PM25",
-    "tanggal": "05/03/2026 06:30:00"
+    "tanggal": "05/03/2026 07:00:00"
   }
 ]
