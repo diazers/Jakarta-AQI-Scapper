@@ -1,34 +1,10 @@
 [
   {
-    "timestamp": "2026-05-04T02:45:14Z",
-    "timestamp_local": "2026-05-04 09:45:14",
+    "timestamp": "2026-05-04T03:15:24Z",
+    "timestamp_local": "2026-05-04 10:15:24",
     "station": "DKI19 Pondok Rangon",
     "ispu": "69",
     "parameter": "PM25",
-    "tanggal": "05/04/2026 09:30:00"
-  },
-  {
-    "timestamp": "2026-05-04T02:45:14Z",
-    "timestamp_local": "2026-05-04 09:45:14",
-    "station": "DKI04 Lubang Buaya",
-    "ispu": "77",
-    "parameter": "PM25",
-    "tanggal": "05/04/2026 09:00:00"
-  },
-  {
-    "timestamp": "2026-05-04T02:45:14Z",
-    "timestamp_local": "2026-05-04 09:45:14",
-    "station": "DKI01 Bundaran HI",
-    "ispu": "71",
-    "parameter": "PM25",
-    "tanggal": "05/04/2026 09:00:00"
-  },
-  {
-    "timestamp": "2026-05-04T02:45:14Z",
-    "timestamp_local": "2026-05-04 09:45:14",
-    "station": "DKI09 GOR Ciracas",
-    "ispu": "61",
-    "parameter": "PM25",
-    "tanggal": "05/04/2026 09:30:00"
+    "tanggal": "05/04/2026 10:00:00"
   }
 ]
