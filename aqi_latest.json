@@ -1,18 +1,10 @@
 [
   {
-    "timestamp": "2026-05-04T00:15:15Z",
-    "timestamp_local": "2026-05-04 07:15:15",
+    "timestamp": "2026-05-04T00:45:21Z",
+    "timestamp_local": "2026-05-04 07:45:21",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "73",
+    "ispu": "71",
     "parameter": "PM25",
-    "tanggal": "05/04/2026 07:00:00"
-  },
-  {
-    "timestamp": "2026-05-04T00:15:15Z",
-    "timestamp_local": "2026-05-04 07:15:15",
-    "station": "DKI09 GOR Ciracas",
-    "ispu": "65",
-    "parameter": "PM25",
-    "tanggal": "05/04/2026 07:00:00"
+    "tanggal": "05/04/2026 07:30:00"
   }
 ]
