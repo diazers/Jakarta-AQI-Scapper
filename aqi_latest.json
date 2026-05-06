@@ -1,10 +1,74 @@
 [
   {
-    "timestamp": "2026-05-06T09:45:30Z",
-    "timestamp_local": "2026-05-06 16:45:30",
+    "timestamp": "2026-05-06T10:15:20Z",
+    "timestamp_local": "2026-05-06 17:15:20",
     "station": "DKI19 Pondok Rangon",
     "ispu": "78",
     "parameter": "PM25",
-    "tanggal": "05/06/2026 16:30:00"
+    "tanggal": "05/06/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-05-06T10:15:20Z",
+    "timestamp_local": "2026-05-06 17:15:20",
+    "station": "DKI16 Ancol",
+    "ispu": "54",
+    "parameter": "PM25",
+    "tanggal": "05/06/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-05-06T10:15:20Z",
+    "timestamp_local": "2026-05-06 17:15:20",
+    "station": "DKI20 Rusunawa Pesakih",
+    "ispu": "70",
+    "parameter": "PM25",
+    "tanggal": "05/06/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-05-06T10:15:20Z",
+    "timestamp_local": "2026-05-06 17:15:20",
+    "station": "DKI18 Lebak Bulus",
+    "ispu": "79",
+    "parameter": "PM25",
+    "tanggal": "05/06/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-05-06T10:15:20Z",
+    "timestamp_local": "2026-05-06 17:15:20",
+    "station": "DKI13 TMB Gombol Paya, Kalideres",
+    "ispu": "56",
+    "parameter": "PM25",
+    "tanggal": "03/26/2026 19:30:00"
+  },
+  {
+    "timestamp": "2026-05-06T10:15:20Z",
+    "timestamp_local": "2026-05-06 17:15:20",
+    "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
+    "ispu": "105",
+    "parameter": "SO2",
+    "tanggal": "05/06/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-05-06T10:15:20Z",
+    "timestamp_local": "2026-05-06 17:15:20",
+    "station": "DKI96 Taman Sungai Kendal",
+    "ispu": "64",
+    "parameter": "PM25",
+    "tanggal": "05/06/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-05-06T10:15:20Z",
+    "timestamp_local": "2026-05-06 17:15:20",
+    "station": "DKI66 RPTRA Citra Permata",
+    "ispu": "0",
+    "parameter": "PM25",
+    "tanggal": "05/06/2026 17:00:00"
+  },
+  {
+    "timestamp": "2026-05-06T10:15:20Z",
+    "timestamp_local": "2026-05-06 17:15:20",
+    "station": "DKI09 GOR Ciracas",
+    "ispu": "81",
+    "parameter": "PM25",
+    "tanggal": "05/06/2026 17:00:00"
   }
 ]
