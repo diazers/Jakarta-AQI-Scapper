@@ -1,10 +1,50 @@
 [
   {
-    "timestamp": "2026-05-07T02:15:17Z",
-    "timestamp_local": "2026-05-07 09:15:17",
+    "timestamp": "2026-05-07T02:45:17Z",
+    "timestamp_local": "2026-05-07 09:45:17",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "89",
+    "ispu": "88",
+    "parameter": "PM25",
+    "tanggal": "05/07/2026 09:30:00"
+  },
+  {
+    "timestamp": "2026-05-07T02:45:17Z",
+    "timestamp_local": "2026-05-07 09:45:17",
+    "station": "DKI57 SDN 11 Kalibata",
+    "ispu": "0",
+    "parameter": "PM25",
+    "tanggal": "05/07/2026 09:30:00"
+  },
+  {
+    "timestamp": "2026-05-07T02:45:17Z",
+    "timestamp_local": "2026-05-07 09:45:17",
+    "station": "DKI49 RPTRA Anggrek Bintaro",
+    "ispu": "0",
+    "parameter": "PM25",
+    "tanggal": "05/07/2026 09:30:00"
+  },
+  {
+    "timestamp": "2026-05-07T02:45:17Z",
+    "timestamp_local": "2026-05-07 09:45:17",
+    "station": "DKI04 Lubang Buaya",
+    "ispu": "109",
     "parameter": "PM25",
     "tanggal": "05/07/2026 09:00:00"
+  },
+  {
+    "timestamp": "2026-05-07T02:45:17Z",
+    "timestamp_local": "2026-05-07 09:45:17",
+    "station": "DKI01 Bundaran HI",
+    "ispu": "90",
+    "parameter": "PM25",
+    "tanggal": "05/07/2026 09:00:00"
+  },
+  {
+    "timestamp": "2026-05-07T02:45:17Z",
+    "timestamp_local": "2026-05-07 09:45:17",
+    "station": "DKI09 GOR Ciracas",
+    "ispu": "90",
+    "parameter": "PM25",
+    "tanggal": "05/07/2026 09:30:00"
   }
 ]
