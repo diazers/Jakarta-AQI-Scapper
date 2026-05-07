@@ -1,106 +1,106 @@
 [
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI19 Pondok Rangon",
     "ispu": "90",
     "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI16 Ancol",
     "ispu": "70",
     "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI20 Rusunawa Pesakih",
     "ispu": "85",
     "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI18 Lebak Bulus",
-    "ispu": "90",
+    "ispu": "91",
     "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "56",
     "parameter": "PM25",
     "tanggal": "03/26/2026 19:30:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "114",
     "parameter": "SO2",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI95 Tebet Eco Park",
     "ispu": "0",
-    "parameter": "O3",
-    "tanggal": "05/07/2026 15:30:00"
+    "parameter": "PM10",
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI96 Taman Sungai Kendal",
     "ispu": "86",
     "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI11 Jakarta Equestrian Pulomas",
     "ispu": "0",
-    "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "parameter": "SO2",
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI93 Taman Maju Bersama (TMB) Dupa Indah",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI57 SDN 11 Kalibata",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI49 RPTRA Anggrek Bintaro",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-07T08:45:12Z",
-    "timestamp_local": "2026-05-07 15:45:12",
+    "timestamp": "2026-05-07T09:15:10Z",
+    "timestamp_local": "2026-05-07 16:15:10",
     "station": "DKI09 GOR Ciracas",
     "ispu": "91",
     "parameter": "PM25",
-    "tanggal": "05/07/2026 15:30:00"
+    "tanggal": "05/07/2026 16:00:00"
   }
 ]
