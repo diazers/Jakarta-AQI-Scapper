@@ -1,50 +1,50 @@
 [
   {
-    "timestamp": "2026-05-08T02:45:13Z",
-    "timestamp_local": "2026-05-08 09:45:13",
+    "timestamp": "2026-05-08T03:15:22Z",
+    "timestamp_local": "2026-05-08 10:15:22",
     "station": "DKI19 Pondok Rangon",
     "ispu": "0",
-    "parameter": "NO2",
-    "tanggal": "05/08/2026 09:30:00"
+    "parameter": "SO2",
+    "tanggal": "05/08/2026 10:00:00"
   },
   {
-    "timestamp": "2026-05-08T02:45:13Z",
-    "timestamp_local": "2026-05-08 09:45:13",
+    "timestamp": "2026-05-08T03:15:22Z",
+    "timestamp_local": "2026-05-08 10:15:22",
     "station": "DKI57 SDN 11 Kalibata",
     "ispu": "61",
     "parameter": "PM25",
-    "tanggal": "05/08/2026 09:30:00"
+    "tanggal": "05/08/2026 10:00:00"
   },
   {
-    "timestamp": "2026-05-08T02:45:13Z",
-    "timestamp_local": "2026-05-08 09:45:13",
+    "timestamp": "2026-05-08T03:15:22Z",
+    "timestamp_local": "2026-05-08 10:15:22",
     "station": "DKI64 Padepokan Restu Bumi Asrama Ciracas",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "05/08/2026 09:30:00"
+    "tanggal": "05/08/2026 10:00:00"
   },
   {
-    "timestamp": "2026-05-08T02:45:13Z",
-    "timestamp_local": "2026-05-08 09:45:13",
+    "timestamp": "2026-05-08T03:15:22Z",
+    "timestamp_local": "2026-05-08 10:15:22",
     "station": "DKI54 SDN 02 Petukangan Selatan",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "05/08/2026 09:30:00"
+    "tanggal": "05/08/2026 10:00:00"
   },
   {
-    "timestamp": "2026-05-08T02:45:13Z",
-    "timestamp_local": "2026-05-08 09:45:13",
+    "timestamp": "2026-05-08T03:15:22Z",
+    "timestamp_local": "2026-05-08 10:15:22",
     "station": "DKI49 RPTRA Anggrek Bintaro",
     "ispu": "22",
     "parameter": "PM25",
-    "tanggal": "05/08/2026 09:30:00"
+    "tanggal": "05/08/2026 10:00:00"
   },
   {
-    "timestamp": "2026-05-08T02:45:13Z",
-    "timestamp_local": "2026-05-08 09:45:13",
+    "timestamp": "2026-05-08T03:15:22Z",
+    "timestamp_local": "2026-05-08 10:15:22",
     "station": "DKI09 GOR Ciracas",
     "ispu": "88",
     "parameter": "PM25",
-    "tanggal": "05/08/2026 09:30:00"
+    "tanggal": "05/08/2026 10:00:00"
   }
 ]
