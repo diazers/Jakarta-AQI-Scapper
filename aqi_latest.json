@@ -1,74 +1,58 @@
 [
   {
-    "timestamp": "2026-05-11T11:15:17Z",
-    "timestamp_local": "2026-05-11 18:15:17",
-    "station": "DKI51 RPTRA Manunggal Petukangan Selatan",
-    "ispu": "0",
-    "parameter": "PM25",
-    "tanggal": "05/11/2026 17:30:00"
-  },
-  {
-    "timestamp": "2026-05-11T11:15:17Z",
-    "timestamp_local": "2026-05-11 18:15:17",
-    "station": "DKI58 SDN 20 Pejaten Timur",
-    "ispu": "58",
-    "parameter": "PM25",
-    "tanggal": "05/11/2026 17:30:00"
-  },
-  {
-    "timestamp": "2026-05-11T11:15:17Z",
-    "timestamp_local": "2026-05-11 18:15:17",
+    "timestamp": "2026-05-11T11:45:16Z",
+    "timestamp_local": "2026-05-11 18:45:16",
     "station": "DKI16 Ancol",
-    "ispu": "71",
+    "ispu": "70",
     "parameter": "PM25",
-    "tanggal": "05/11/2026 18:00:00"
+    "tanggal": "05/11/2026 18:30:00"
   },
   {
-    "timestamp": "2026-05-11T11:15:17Z",
-    "timestamp_local": "2026-05-11 18:15:17",
+    "timestamp": "2026-05-11T11:45:16Z",
+    "timestamp_local": "2026-05-11 18:45:16",
     "station": "DKI20 Rusunawa Pesakih",
     "ispu": "73",
     "parameter": "PM25",
-    "tanggal": "05/11/2026 17:30:00"
+    "tanggal": "05/11/2026 18:30:00"
   },
   {
-    "timestamp": "2026-05-11T11:15:17Z",
-    "timestamp_local": "2026-05-11 18:15:17",
+    "timestamp": "2026-05-11T11:45:16Z",
+    "timestamp_local": "2026-05-11 18:45:16",
     "station": "DKI18 Lebak Bulus",
     "ispu": "85",
     "parameter": "PM25",
-    "tanggal": "05/11/2026 17:30:00"
+    "tanggal": "05/11/2026 18:30:00"
   },
   {
-    "timestamp": "2026-05-11T11:15:17Z",
-    "timestamp_local": "2026-05-11 18:15:17",
+    "timestamp": "2026-05-11T11:45:16Z",
+    "timestamp_local": "2026-05-11 18:45:16",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "117",
     "parameter": "HC",
     "tanggal": "05/11/2026 17:00:00"
   },
   {
-    "timestamp": "2026-05-11T11:15:17Z",
-    "timestamp_local": "2026-05-11 18:15:17",
+    "timestamp": "2026-05-11T11:45:16Z",
+    "timestamp_local": "2026-05-11 18:45:16",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "119",
     "parameter": "SO2",
     "tanggal": "05/11/2026 17:00:00"
   },
   {
-    "timestamp": "2026-05-11T11:15:17Z",
-    "timestamp_local": "2026-05-11 18:15:17",
+    "timestamp": "2026-05-11T11:45:16Z",
+    "timestamp_local": "2026-05-11 18:45:16",
     "station": "DKI95 Tebet Eco Park",
     "ispu": "78",
     "parameter": "PM25",
-    "tanggal": "05/11/2026 17:30:00"
+    "tanggal": "05/11/2026 18:30:00"
   },
   {
-    "timestamp": "2026-05-11T11:15:17Z",
-    "timestamp_local": "2026-05-11 18:15:17",
+    "timestamp": "2026-05-11T11:45:16Z",
+    "timestamp_local": "2026-05-11 18:45:16",
     "station": "DKI96 Taman Sungai Kendal",
     "ispu": "81",
     "parameter": "PM25",
-    "tanggal": "05/11/2026 17:30:00"
+    "tanggal": "05/11/2026 18:30:00"
   }
 ]
