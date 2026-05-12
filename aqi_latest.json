@@ -1,98 +1,98 @@
 [
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI16 Ancol",
     "ispu": "69",
     "parameter": "PM25",
-    "tanggal": "05/12/2026 14:30:00"
+    "tanggal": "05/12/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI20 Rusunawa Pesakih",
     "ispu": "78",
     "parameter": "PM25",
-    "tanggal": "05/12/2026 14:30:00"
+    "tanggal": "05/12/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI18 Lebak Bulus",
-    "ispu": "85",
+    "ispu": "84",
     "parameter": "PM25",
-    "tanggal": "05/12/2026 14:30:00"
+    "tanggal": "05/12/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": "117",
     "parameter": "HC",
     "tanggal": "05/11/2026 17:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": "119",
     "parameter": "SO2",
     "tanggal": "05/11/2026 17:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI05 Kebun Jeruk",
     "ispu": "83",
     "parameter": "PM25",
-    "tanggal": "05/12/2026 14:00:00"
+    "tanggal": "05/12/2026 15:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI03 Jagakarsa",
     "ispu": "53",
     "parameter": "PM25",
-    "tanggal": "05/12/2026 14:00:00"
+    "tanggal": "05/12/2026 15:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI02 Kelapa Gading",
     "ispu": "82",
     "parameter": "PM25",
-    "tanggal": "05/12/2026 14:00:00"
+    "tanggal": "05/12/2026 15:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI95 Tebet Eco Park",
     "ispu": "75",
     "parameter": "PM25",
-    "tanggal": "05/12/2026 14:30:00"
+    "tanggal": "05/12/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI96 Taman Sungai Kendal",
     "ispu": "83",
     "parameter": "PM25",
-    "tanggal": "05/12/2026 14:30:00"
+    "tanggal": "05/12/2026 16:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI04 Lubang Buaya",
     "ispu": "94",
     "parameter": "PM25",
-    "tanggal": "05/12/2026 14:00:00"
+    "tanggal": "05/12/2026 15:00:00"
   },
   {
-    "timestamp": "2026-05-12T07:45:19Z",
-    "timestamp_local": "2026-05-12 14:45:19",
+    "timestamp": "2026-05-12T09:15:14Z",
+    "timestamp_local": "2026-05-12 16:15:14",
     "station": "DKI01 Bundaran HI",
     "ispu": "0",
-    "parameter": "PM25",
-    "tanggal": "05/12/2026 14:00:00"
+    "parameter": "CO",
+    "tanggal": "05/12/2026 15:00:00"
   }
 ]
