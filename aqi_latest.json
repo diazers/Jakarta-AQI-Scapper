@@ -1,58 +1,58 @@
 [
   {
-    "timestamp": "2026-05-31T17:45:10Z",
-    "timestamp_local": "2026-06-01 00:45:10",
+    "timestamp": "2026-05-31T18:15:19Z",
+    "timestamp_local": "2026-06-01 01:15:19",
     "station": "DKI40 RPTRA Tipar Asri",
     "ispu": "0",
     "parameter": "PM25",
-    "tanggal": "06/01/2026 00:30:00"
+    "tanggal": "06/01/2026 01:00:00"
   },
   {
-    "timestamp": "2026-05-31T17:45:10Z",
-    "timestamp_local": "2026-06-01 00:45:10",
+    "timestamp": "2026-05-31T18:15:19Z",
+    "timestamp_local": "2026-06-01 01:15:19",
     "station": "DKI56 SDN 04 Bintaro",
-    "ispu": "61",
+    "ispu": "63",
     "parameter": "PM25",
-    "tanggal": "06/01/2026 00:30:00"
+    "tanggal": "06/01/2026 01:00:00"
   },
   {
-    "timestamp": "2026-05-31T17:45:10Z",
-    "timestamp_local": "2026-06-01 00:45:10",
+    "timestamp": "2026-05-31T18:15:19Z",
+    "timestamp_local": "2026-06-01 01:15:19",
     "station": "DKI19 Pondok Rangon",
-    "ispu": "83",
+    "ispu": "84",
     "parameter": "PM25",
-    "tanggal": "06/01/2026 00:30:00"
+    "tanggal": "06/01/2026 01:00:00"
   },
   {
-    "timestamp": "2026-05-31T17:45:10Z",
-    "timestamp_local": "2026-06-01 00:45:10",
+    "timestamp": "2026-05-31T18:15:19Z",
+    "timestamp_local": "2026-06-01 01:15:19",
     "station": "DKI37 RPTRA Rawa Badak Utara",
     "ispu": "9",
     "parameter": "PM25",
-    "tanggal": "06/01/2026 00:30:00"
+    "tanggal": "06/01/2026 01:00:00"
   },
   {
-    "timestamp": "2026-05-31T17:45:10Z",
-    "timestamp_local": "2026-06-01 00:45:10",
+    "timestamp": "2026-05-31T18:15:19Z",
+    "timestamp_local": "2026-06-01 01:15:19",
     "station": "DKI89 RSUD Cengkareng",
     "ispu": "12",
     "parameter": "PM25",
-    "tanggal": "06/01/2026 00:30:00"
+    "tanggal": "06/01/2026 01:00:00"
   },
   {
-    "timestamp": "2026-05-31T17:45:10Z",
-    "timestamp_local": "2026-06-01 00:45:10",
+    "timestamp": "2026-05-31T18:15:19Z",
+    "timestamp_local": "2026-06-01 01:15:19",
     "station": "DKI80 SDN 18 Pekayon",
-    "ispu": "45",
+    "ispu": "48",
     "parameter": "PM25",
-    "tanggal": "06/01/2026 00:30:00"
+    "tanggal": "06/01/2026 01:00:00"
   },
   {
-    "timestamp": "2026-05-31T17:45:10Z",
-    "timestamp_local": "2026-06-01 00:45:10",
+    "timestamp": "2026-05-31T18:15:19Z",
+    "timestamp_local": "2026-06-01 01:15:19",
     "station": "DKI41 RSUD Tanjung Priok (ROOFTOP)",
     "ispu": "54",
     "parameter": "PM25",
-    "tanggal": "06/01/2026 00:30:00"
+    "tanggal": "06/01/2026 01:00:00"
   }
 ]
