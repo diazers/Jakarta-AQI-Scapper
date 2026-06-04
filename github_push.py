@@ -9,7 +9,7 @@ For local testing, set these before running:
   export GITHUB_REPO="yourusername/iqair-data"
 """
 
-import base64, csv, io, os
+import base64, csv, io, os, subprocess, datetime
 from github import Github
 
 GITHUB_TOKEN = os.environ.get("SCRAPER_GITHUB_TOKEN")
@@ -24,6 +24,35 @@ FIELDNAMES = [
     "temperature", "humidity", "wind_speed", "pressure",
 ]
 
+# --- Disable auto-gc globally (once at startup) ---
+def disable_auto_gc():
+    try:
+        subprocess.run(["git", "config", "--global", "gc.auto", "0"], check=True)
+        print("  [github] Disabled auto-gc")
+    except Exception as e:
+        print(f"  [github] Warning: could not disable auto-gc: {e}")
+
+# --- Run manual cleanup once per day ---
+def daily_gc_cleanup():
+    today = datetime.date.today().isoformat()
+    marker = "/tmp/git_gc_last_run.txt"
+
+    try:
+        if os.path.exists(marker):
+            with open(marker) as f:
+                last_run = f.read().strip()
+        else:
+            last_run = None
+
+        if last_run != today:
+            print("  [github] Running manual git gc cleanup...")
+            subprocess.run(["git", "gc", "--prune=now"], check=True)
+            subprocess.run(["git", "repack", "-a", "-d"], check=True)
+            subprocess.run(["git", "fsck"], check=True)
+            with open(marker, "w") as f:
+                f.write(today)
+    except Exception as e:
+        print(f"  [github] Warning: gc cleanup failed: {e}")
 
 def push_to_github(new_rows: list, commit_message: str = "Add AQI data"):
     if not new_rows:
@@ -33,6 +62,9 @@ def push_to_github(new_rows: list, commit_message: str = "Add AQI data"):
     if not GITHUB_TOKEN:
         print("  [github] ERROR: SCRAPER_GITHUB_TOKEN env var not set.")
         return
+
+    disable_auto_gc()
+    daily_gc_cleanup()
 
     g    = Github(GITHUB_TOKEN)
     repo = g.get_repo(REPO_NAME)
@@ -65,7 +97,7 @@ def push_to_github(new_rows: list, commit_message: str = "Add AQI data"):
 
     new_content = buf.getvalue()
 
-    # Push
+    # Push with retry
     try:
         if sha:
             repo.update_file(FILE_PATH, commit_message, new_content, sha, branch=BRANCH)
@@ -75,4 +107,13 @@ def push_to_github(new_rows: list, commit_message: str = "Add AQI data"):
             print(f"  [github] ✅ Created {FILE_PATH} (+{len(new_rows)} rows)")
     except Exception as e:
         print(f"  [github] ❌ Push failed: {e}")
-        raise
+        print("  [github] Retrying push...")
+        try:
+            if sha:
+                repo.update_file(FILE_PATH, commit_message, new_content, sha, branch=BRANCH)
+            else:
+                repo.create_file(FILE_PATH, commit_message, new_content, branch=BRANCH)
+            print(f"  [github] ✅ Push succeeded on retry")
+        except Exception as e2:
+            print(f"  [github] ❌ Retry failed: {e2}")
+            raise
