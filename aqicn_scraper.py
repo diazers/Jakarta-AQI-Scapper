@@ -38,6 +38,7 @@ STATIONS = [
     {"name": "Permata Hijau 3 Nafas",     "url": "https://aqicn.org/station/@570235/"},
     {"name": "Pakubuwono 3 Nafas",        "url": "https://aqicn.org/station/@537937/"},
     {"name": "Kedoya Utara Nafas",        "url": "https://aqicn.org/station/@521380/"},
+    {"name": "Bekasi Kayuringin",         "url": "https://aqicn.org/station/@416815/"},
 ]
 
 PARAM_COLS = ["AQI", "PM1", "PM2.5", "PM10", "O3", "NO2", "SO2", "CO", "CO2",
