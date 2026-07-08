@@ -1,66 +1,66 @@
 [
   {
-    "timestamp": "2026-07-08T14:17:54Z",
-    "timestamp_local": "2026-07-08 21:17:54",
+    "timestamp": "2026-07-08T15:17:48Z",
+    "timestamp_local": "2026-07-08 22:17:48",
     "station": "LCS11 PT. JIEP",
-    "ispu": 102,
+    "ispu": 101,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 19:00:00"
+    "tanggal": "07/08/2026 20:00:00"
   },
   {
-    "timestamp": "2026-07-08T14:17:54Z",
-    "timestamp_local": "2026-07-08 21:17:54",
+    "timestamp": "2026-07-08T15:17:48Z",
+    "timestamp_local": "2026-07-08 22:17:48",
     "station": "LCS10 Pulau Pramuka",
-    "ispu": 75,
+    "ispu": 74,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 19:00:00"
+    "tanggal": "07/08/2026 20:00:00"
   },
   {
-    "timestamp": "2026-07-08T14:17:54Z",
-    "timestamp_local": "2026-07-08 21:17:54",
+    "timestamp": "2026-07-08T15:17:48Z",
+    "timestamp_local": "2026-07-08 22:17:48",
     "station": "LCS13 SPKU Kelapa Gading",
-    "ispu": 89,
+    "ispu": 90,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 19:00:00"
+    "tanggal": "07/08/2026 20:00:00"
   },
   {
-    "timestamp": "2026-07-08T14:17:54Z",
-    "timestamp_local": "2026-07-08 21:17:54",
+    "timestamp": "2026-07-08T15:17:48Z",
+    "timestamp_local": "2026-07-08 22:17:48",
     "station": "DKI28 SDN 07 Paseban (ROOFTOP)",
-    "ispu": 51,
+    "ispu": 50,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 21:00:00"
+    "tanggal": "07/08/2026 22:00:00"
   },
   {
-    "timestamp": "2026-07-08T14:17:54Z",
-    "timestamp_local": "2026-07-08 21:17:54",
+    "timestamp": "2026-07-08T15:17:48Z",
+    "timestamp_local": "2026-07-08 22:17:48",
     "station": "DKI106 Kemayoran BMKG",
     "ispu": 79,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 19:00:00"
+    "tanggal": "07/08/2026 20:00:00"
   },
   {
-    "timestamp": "2026-07-08T14:17:54Z",
-    "timestamp_local": "2026-07-08 21:17:54",
+    "timestamp": "2026-07-08T15:17:48Z",
+    "timestamp_local": "2026-07-08 22:17:48",
     "station": "LCS14 Taman Telur",
     "ispu": 85,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 19:00:00"
+    "tanggal": "07/08/2026 20:00:00"
   },
   {
-    "timestamp": "2026-07-08T14:17:54Z",
-    "timestamp_local": "2026-07-08 21:17:54",
+    "timestamp": "2026-07-08T15:17:48Z",
+    "timestamp_local": "2026-07-08 22:17:48",
     "station": "LCS08 Kota Tua",
     "ispu": 89,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 19:00:00"
+    "tanggal": "07/08/2026 20:00:00"
   },
   {
-    "timestamp": "2026-07-08T14:17:54Z",
-    "timestamp_local": "2026-07-08 21:17:54",
+    "timestamp": "2026-07-08T15:17:48Z",
+    "timestamp_local": "2026-07-08 22:17:48",
     "station": "DKI67 RPTRA Rawajaya",
     "ispu": 58,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 20:20:00"
+    "tanggal": "07/08/2026 21:40:00"
   }
 ]
