@@ -1,18 +1,66 @@
 [
   {
-    "timestamp": "2026-07-08T12:18:01Z",
-    "timestamp_local": "2026-07-08 19:18:01",
+    "timestamp": "2026-07-08T13:17:50Z",
+    "timestamp_local": "2026-07-08 20:17:50",
+    "station": "LCS11 PT. JIEP",
+    "ispu": 100,
+    "parameter": "PM25",
+    "tanggal": "07/08/2026 18:00:00"
+  },
+  {
+    "timestamp": "2026-07-08T13:17:50Z",
+    "timestamp_local": "2026-07-08 20:17:50",
+    "station": "LCS10 Pulau Pramuka",
+    "ispu": 76,
+    "parameter": "PM25",
+    "tanggal": "07/08/2026 18:00:00"
+  },
+  {
+    "timestamp": "2026-07-08T13:17:50Z",
+    "timestamp_local": "2026-07-08 20:17:50",
+    "station": "LCS13 SPKU Kelapa Gading",
+    "ispu": 89,
+    "parameter": "PM25",
+    "tanggal": "07/08/2026 18:00:00"
+  },
+  {
+    "timestamp": "2026-07-08T13:17:50Z",
+    "timestamp_local": "2026-07-08 20:17:50",
     "station": "DKI28 SDN 07 Paseban (ROOFTOP)",
     "ispu": 50,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 19:00:00"
+    "tanggal": "07/08/2026 20:00:00"
   },
   {
-    "timestamp": "2026-07-08T12:18:01Z",
-    "timestamp_local": "2026-07-08 19:18:01",
+    "timestamp": "2026-07-08T13:17:50Z",
+    "timestamp_local": "2026-07-08 20:17:50",
+    "station": "DKI106 Kemayoran BMKG",
+    "ispu": 79,
+    "parameter": "PM25",
+    "tanggal": "07/08/2026 18:00:00"
+  },
+  {
+    "timestamp": "2026-07-08T13:17:50Z",
+    "timestamp_local": "2026-07-08 20:17:50",
+    "station": "LCS14 Taman Telur",
+    "ispu": 85,
+    "parameter": "PM25",
+    "tanggal": "07/08/2026 18:00:00"
+  },
+  {
+    "timestamp": "2026-07-08T13:17:50Z",
+    "timestamp_local": "2026-07-08 20:17:50",
+    "station": "LCS08 Kota Tua",
+    "ispu": 89,
+    "parameter": "PM25",
+    "tanggal": "07/08/2026 18:00:00"
+  },
+  {
+    "timestamp": "2026-07-08T13:17:50Z",
+    "timestamp_local": "2026-07-08 20:17:50",
     "station": "DKI67 RPTRA Rawajaya",
     "ispu": 58,
     "parameter": "PM25",
-    "tanggal": "07/08/2026 19:00:00"
+    "tanggal": "07/08/2026 19:53:00"
   }
 ]
