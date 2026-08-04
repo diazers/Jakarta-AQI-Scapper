@@ -1,15 +1,15 @@
 [
   {
-    "timestamp": "2026-08-04T04:45:18Z",
-    "timestamp_local": "2026-08-04 11:45:18",
+    "timestamp": "2026-08-04T05:45:22Z",
+    "timestamp_local": "2026-08-04 12:45:22",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": 69,
     "parameter": "PM25",
     "tanggal": "08/04/2026 09:00:00"
   },
   {
-    "timestamp": "2026-08-04T04:45:18Z",
-    "timestamp_local": "2026-08-04 11:45:18",
+    "timestamp": "2026-08-04T05:45:22Z",
+    "timestamp_local": "2026-08-04 12:45:22",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": 74,
     "parameter": "PM25",
