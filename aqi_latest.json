@@ -1,18 +1,66 @@
 [
   {
-    "timestamp": "2026-08-17T01:17:51Z",
-    "timestamp_local": "2026-08-17 08:17:51",
+    "timestamp": "2026-08-17T01:45:16Z",
+    "timestamp_local": "2026-08-17 08:45:16",
+    "station": "DKI02 Kelapa Gading",
+    "ispu": 94,
+    "parameter": "PM25",
+    "tanggal": "08/17/2026 08:00:00"
+  },
+  {
+    "timestamp": "2026-08-17T01:45:16Z",
+    "timestamp_local": "2026-08-17 08:45:16",
+    "station": "DKI01 Bundaran HI",
+    "ispu": 113,
+    "parameter": "PM25",
+    "tanggal": "08/17/2026 08:00:00"
+  },
+  {
+    "timestamp": "2026-08-17T01:45:16Z",
+    "timestamp_local": "2026-08-17 08:45:16",
     "station": "DKI13 TMB Gombol Paya, Kalideres",
     "ispu": 93,
     "parameter": "PM25",
     "tanggal": "08/17/2026 06:00:00"
   },
   {
-    "timestamp": "2026-08-17T01:17:51Z",
-    "timestamp_local": "2026-08-17 08:17:51",
+    "timestamp": "2026-08-17T01:45:16Z",
+    "timestamp_local": "2026-08-17 08:45:16",
+    "station": "DKI03 Jagakarsa",
+    "ispu": 91,
+    "parameter": "PM25",
+    "tanggal": "08/17/2026 08:00:00"
+  },
+  {
+    "timestamp": "2026-08-17T01:45:16Z",
+    "timestamp_local": "2026-08-17 08:45:16",
     "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
     "ispu": 120,
     "parameter": "PM25",
     "tanggal": "08/17/2026 06:00:00"
+  },
+  {
+    "timestamp": "2026-08-17T01:45:16Z",
+    "timestamp_local": "2026-08-17 08:45:16",
+    "station": "DKI04 Lubang Buaya",
+    "ispu": 108,
+    "parameter": "PM25",
+    "tanggal": "08/17/2026 08:00:00"
+  },
+  {
+    "timestamp": "2026-08-17T01:45:16Z",
+    "timestamp_local": "2026-08-17 08:45:16",
+    "station": "DKI106 Kemayoran BMKG",
+    "ispu": 93,
+    "parameter": "PM25",
+    "tanggal": "08/17/2026 07:00:00"
+  },
+  {
+    "timestamp": "2026-08-17T01:45:16Z",
+    "timestamp_local": "2026-08-17 08:45:16",
+    "station": "DKI05 Kebun Jeruk",
+    "ispu": 105,
+    "parameter": "PM25",
+    "tanggal": "08/17/2026 08:00:00"
   }
 ]
