@@ -1,18 +1,42 @@
 [
   {
-    "timestamp": "2026-10-26T16:45:29Z",
-    "timestamp_local": "2026-10-26 23:45:29",
-    "station": "DKI13 TMB Gombol Paya, Kalideres",
-    "ispu": 71,
+    "timestamp": "2026-10-26T17:17:46Z",
+    "timestamp_local": "2026-10-27 00:17:46",
+    "station": "DKI95 Tebet Eco Park",
+    "ispu": 75,
     "parameter": "PM25",
-    "tanggal": "10/26/2026 23:00:00"
+    "tanggal": "10/27/2026 00:00:00"
   },
   {
-    "timestamp": "2026-10-26T16:45:29Z",
-    "timestamp_local": "2026-10-26 23:45:29",
-    "station": "DKI06 RPTRA Manggala Bisma, Papanggo",
-    "ispu": 102,
+    "timestamp": "2026-10-26T17:17:46Z",
+    "timestamp_local": "2026-10-27 00:17:46",
+    "station": "DKI60 Waduk Jagakarsa",
+    "ispu": 61,
     "parameter": "PM25",
-    "tanggal": "10/26/2026 23:00:00"
+    "tanggal": "10/27/2026 00:00:00"
+  },
+  {
+    "timestamp": "2026-10-26T17:17:46Z",
+    "timestamp_local": "2026-10-27 00:17:46",
+    "station": "DKI102 Rusun Rorotan",
+    "ispu": 6,
+    "parameter": "PM25",
+    "tanggal": "10/27/2026 00:00:00"
+  },
+  {
+    "timestamp": "2026-10-26T17:17:46Z",
+    "timestamp_local": "2026-10-27 00:17:46",
+    "station": "DKI48 Kantor SUDIN Jakarta Selatan (ROOFTOP)",
+    "ispu": 32,
+    "parameter": "PM25",
+    "tanggal": "10/27/2026 00:00:00"
+  },
+  {
+    "timestamp": "2026-10-26T17:17:46Z",
+    "timestamp_local": "2026-10-27 00:17:46",
+    "station": "DKI24 RPTRA Jaya Molek",
+    "ispu": 48,
+    "parameter": "PM25",
+    "tanggal": "10/27/2026 00:00:00"
   }
 ]
